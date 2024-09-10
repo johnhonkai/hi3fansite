@@ -178,15 +178,15 @@ label:hover {
     display:flex;
 
     align-items: center;
+    justify-content: center;
     max-width:940px;
     max-height: 327px;
     gap: 10px 10px;
     margin: auto;
     padding-bottom: 0px;
     color: #f2f2f2;
-    overflow: hidden;
-
     
+  margin-top: 20px;
 }
 
 .flexvalk img{
@@ -1084,27 +1084,27 @@ max-width: 95%;
   
 @font-face {
   font-family: "WF";
-  src: url("font/WFSemibold.ttf");
+  src: url("font/wfsemibold.ttf");
 }
 
 @font-face {
   font-family: "WFRegular";
-  src: url("font/WFRegular.ttf");
+  src: url("font/wfregular.ttf");
 }
 
 @font-face {
   font-family: "LatoRegular";
-  src: url("font/Lato-Regular.ttf");
+  src: url("font/lato-regular.ttf");
 }
 
 @font-face {
   font-family: "RobotoRegular";
-  src: url("font/Roboto-Regular.ttf");
+  src: url("font/roboto-regular.ttf");
 }
 
 @font-face {
   font-family: "HelveticaRegular";
-  src: url("font/Helvetica.ttf");
+  src: url("font/helvetica.ttf");
 }
 
 .parent {
