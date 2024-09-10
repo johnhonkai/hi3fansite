@@ -1,0 +1,1218 @@
+h1 {
+    
+    text-align: center;
+    color:white;
+    font-family: WF; 
+}
+
+h3 {
+    
+    color:white;
+    font-family: WF; 
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+h4 {
+    color:#c99aff;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 25px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+body{
+    margin:0;
+}
+
+.topnav {
+    position: sticky;
+    display:flex;
+    background-color: #333;
+    overflow: hidden;
+    align-items: center;
+
+    height: 60px;
+    width: auto;
+    margin-bottom: 5px;
+    top: 0;
+
+    padding: 0;
+
+    justify-content: end;
+    padding-right: 20px;
+    z-index: 22;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .helpsort {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+.helpsort {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.topnav img {
+    height: auto;
+    width: auto;
+    max-height: 30px;
+    max-width: 250px;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family:WF;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffce3a, #ffce3a 50%, #f2f2f2 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 900ms ease;
+    
+}
+
+
+.topnav li:first-child {
+  /* setting the margin of the inline-end of the
+     first-child <li> element to 'auto', in order
+     to push the first-child away from the rest of
+     the content: */
+  margin-inline-end: auto;
+  list-style-type: none;
+}
+
+.topnav a:hover {
+    color: #ffce3a;
+    background-position: 0 100%;
+
+}
+
+label:hover {
+  color: #ffce3a;
+  background-position: 0 100%;
+  transition-duration: 900ms;
+  transition: ease-in;
+}
+
+.valklist {
+    display:flex;
+    max-width: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px;
+    column-gap: 25px;
+    row-gap: 20px;
+    
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+
+.btnparent{
+  display: flex;
+  justify-content: center; /* Centers the children horizontally */
+  align-items: center;     /* Centers the children vertically */
+
+}
+
+.btnfilter {
+  max-width: 940px;
+  padding: 5px 5px;
+
+  flex-wrap: wrap;
+
+  display: flex; /* Makes each child a flex container */
+  justify-content: center; /* Centers content horizontally within each child */
+  align-items: center;     /* Centers content vertically within each child */
+  flex-direction: row;  /* Stack items vertically, optional */
+
+
+}
+
+
+.btnfilter img{
+  display: block;
+  position:relative;
+  margin-left: 0;
+  margin-right: 0;
+  
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.flexvalk{
+    display:flex;
+
+    align-items: center;
+    max-width:940px;
+    max-height: 327px;
+    gap: 10px 10px;
+    margin: auto;
+    padding-bottom: 0px;
+    color: #f2f2f2;
+    overflow: hidden;
+
+    
+}
+
+.flexvalk img{
+    max-width: 322px;
+}
+
+
+.flexhorizontal{
+    margin-left: 0; 
+    margin-right: auto; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display:flex;
+    max-width: 940px;
+    max-height: 327px;
+    gap: 10px 10px;
+
+
+    color: #f2f2f2;
+}
+
+.flexhorizontal2{
+    margin-left: 0; 
+    margin-right: auto; 
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display:flex;
+    max-width: 940px;
+    max-height: auto;
+    gap: 10px 10px;
+    color: #f2f2f2;
+}
+
+.flexhorizontal2 h3{
+    font-size: 20px;
+}
+.flexhorizontal3{
+    margin-left: 0; 
+    margin-right: auto; 
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display:flex;
+    max-width: 940px;
+    max-height: 327px;
+    gap: 5px 5px;
+    color: #f2f2f2;
+    flex-wrap: wrap;
+
+}
+
+.flexhorizontal4{
+
+    display:flex;
+    flex-direction: row;
+    max-width: 940px;
+    max-height: 327px;
+    top: 0;
+    left: 0;
+    margin: auto;
+
+    width: 100%;
+    height: 100%;
+    color: #f2f2f2;
+
+}
+
+.flexhorizontal5{
+  margin-left: 10px; 
+  margin-right: 10px; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto auto ;
+
+
+
+  column-gap: 20px;
+  row-gap: 10px;
+  
+  max-width: 940px;
+  max-height: auto;
+
+  color: #f2f2f2;
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+
+.flexhorizontalhome {
+
+  max-width: 940px;
+  max-height: auto;
+
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+
+
+  color: #f2f2f2;
+
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+  font-family: HelveticaRegular;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  justify-content: space-between;
+  align-content: space-evenly;
+
+  
+
+}
+
+
+
+.flexverticalnews {
+  flex: 1 1 0;
+  font-size: 17px;
+  color: #f2f2f2;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: 5px;
+  gap: 5px;
+
+  align-items: left;
+  justify-content: left;
+}
+
+.flexverticalnews img {
+max-width: 100%;
+}
+
+.flexverticalnews iframe {
+  max-width: 100%;
+  max-height: auto;
+  }
+
+@media screen and (max-width: 650px) {
+  .flexverticalnews {
+
+    flex: 1 0 0;
+    padding: 10px;
+  }
+  .flexhorizontalhome{
+    flex-direction: column;
+    justify-content:left;
+    align-content: left;
+  
+  }
+}
+
+.flexverticalnews b {
+  font-size: 20px;
+  font-family: WF;
+}
+
+
+
+.testbox{
+  max-width: 940px;
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .flexhorizontal5 {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+.container2 {
+    display:flex;
+    flex-direction: column;
+    font-family: WFRegular; 
+
+    margin-left: 10px;
+}
+
+.container2avatar {
+  width: 100%; /* Image will scale to fit the parent container */
+  max-width: 30%; /* Image will not exceed 50% of the parent container's width */
+  height: 100%; /* Maintains the aspect ratio of the image */
+  display: block; /* Removes the inline element space below the image */
+  margin: 0 auto; /* Centers the image within the parent container */
+}
+
+.container2avatar img {
+  max-width: 100%; /* Ensures the image does not exceed container's width */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+@media screen and (max-width: 639px) {
+  .container2avatar{
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+.container3 {
+    display:flex;
+    flex-direction: column;
+    font-family: WFRegular; 
+}
+
+
+.container4 {
+    display:flex;
+    flex-direction: column;
+    font-family: WFRegular; 
+    margin-right: 15px;
+    margin-top: 10px;
+
+    max-width: 30%;
+    height: auto;
+
+    
+}
+
+.topsection {
+  display:block;
+
+  max-width: 940px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; 
+
+  padding: 20px;
+  text-align: center;
+
+  font-family: WFRegular; 
+  color: white;
+}
+
+.topsection img{
+  max-width: 100%;
+}
+
+.topsection iframe{
+  width: 100%;
+  height:900px;
+  border: none;
+}
+
+.betatabcontent {
+  display: none;
+  padding: 20px 0;
+
+}
+
+select {
+  font-family: WFRegular; 
+  height: 33px;
+}
+
+.betatablinks {
+  padding: 10px 20px;
+  margin-right: 5px;
+
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  justify-content: center;
+  font-family: WFRegular; 
+}
+
+.betatablinks:hover {
+  background-color: #ddd;
+}
+
+.betatablinks.active {
+  background-color: #ccc;
+}
+
+#betatabsContainer {
+  margin-top: 20px;
+
+}
+
+.container4 img {
+  max-width:100px; /* Ensures the image does not exceed container's width */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.container3 img {
+  max-width: 160px; /* Ensures the image does not exceed container's width */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.container4 a{
+    color: #ffce3a;
+    font-family: WF; 
+}
+
+.container3 a{
+    color: #ffce3a;
+    font-family: WF; 
+}
+
+.valkcard { 
+    text-align: center;
+    width: 140px; 
+    color:white;
+    font-family: WFRegular; 
+    display: none;
+    
+} 
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+.btnfilter2 {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+
+  cursor: pointer;
+
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-family: WFRegular; 
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+    background-color: #1bff2e;
+    
+}
+  
+  /* Add a dark background to the active button */
+.btn.active {
+    background-color: #666;
+    color: white;
+    font-family: WF; 
+}
+
+.valkcard img { 
+    display: block; 
+    margin: 0 auto; 
+    padding: 5px;
+}
+.valkcard a { 
+    text-decoration: none;
+    color:white;
+}
+
+.valkcard a:hover {
+
+    background-position: 0 100%;
+}
+
+
+.valkinfo {
+    display:block;
+    background-color: rgba(31, 31, 31, 0.41);
+    backdrop-filter: blur(5px);
+    max-width: 940px;
+    margin: auto;
+    color:white;
+    
+    font-family: RobotoRegular; 
+    line-height: 1.5;
+    
+    margin-top: 40px;
+
+
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 17px;
+    border-radius: 25px;
+    box-shadow: 0 -4px 0 white; 
+    /*box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;ask ppl which one is more beautiful*/
+
+}
+
+
+
+
+.valkinfo h4{
+  font-family: WF;
+  color: #c5b8ff;
+}
+
+
+
+.valkinforank {
+    display:flex;
+    justify-content:center;
+ 
+    margin: auto;
+    color:white;
+    font-family: WFRegular; 
+    line-height: 1.5;
+
+    margin-top: 40px;
+
+
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
+    font-size: 17px;
+
+}
+
+
+.valkinfo img {
+    display: block; 
+
+    padding: 5px;
+    align-items: center;
+
+    max-width: 99%;
+}
+
+.breakline {
+
+    margin: auto;
+    content: "";
+    display: block;
+    margin-top: 20px;
+    margin-right: 15px;
+    height: 0.5px;
+    background: #b6b6b6;
+
+}
+
+.lineup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%; /* Flex child width is 100% of the parent by default */
+    height: auto;
+    max-height: 120px;
+    align-items: center;/* make the damn + stay at the center */
+    justify-content: center;
+
+
+}
+
+
+.lineup a{
+    font-size: 2em;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .lineup a {
+    padding: 5px;
+  }
+}
+
+.lineup li{
+    color: #d6d6d6;
+    font-size: 16px;
+}
+
+.equipment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap:5px;
+}
+
+.equipbruh{
+text-align: center;
+margin-top: 5px;
+max-width: 95%;
+}
+
+.equiptest{
+
+    display: flex;
+    overflow: hidden;  
+    border-radius: 10px;
+    max-width: 110px;
+
+}
+
+.equiptest img {
+    display: block;
+    transition: transform .4s;   /* smoother zoom */
+    border-radius: 20px;
+
+  }
+  
+.equiptest:hover img {
+    transform: scale(1.3);
+    transform-origin: 50% 50%;
+}
+
+
+.breaklinecontainer {
+    height: 6px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.breakline2 {
+    position: absolute;
+
+    content: "";
+    display: block;
+
+    height: 1px;
+    width: 100%;
+    background: #b6b6b68c;
+
+}
+
+.breaklinetop {
+    z-index: 9;
+    display: block;
+    height: 6px;
+    width:60px;
+    background: #c99aff;
+    transform: translateY(-30%);
+
+}
+
+.breaklinetophome {
+  z-index: 9;
+  display: block;
+  height: 6px;
+  width:60px;
+  background: #56c1ff;
+  transform: translateY(-30%);
+
+}
+
+
+
+
+.button-4 {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+}
+
+.tab {
+
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    flex: 1;        /* Each button takes equal space */
+    appearance: none;
+    background-color: #7c7c7c59;
+    border: thin solid rgba(27, 31, 35, 0.15);
+
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: WF;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+    border-radius: 10px;
+
+
+  }
+ 
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #6b6b6b;
+    text-decoration: none;
+    transition-duration: 0.1s;
+
+
+  }
+  
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #dbdbdb;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition:200ms; 
+    color: #29242e;
+    border-radius: 5px;
+  }
+
+  .tab button:disabled {
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+
+  }
+  
+  .tab button:focus {
+    outline: 1px transparent;
+  }
+  
+  .tab button:before {
+    display: none;
+  }
+  .tab button:-webkit-details-marker {
+    display: none;
+  }
+
+  
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 12px;
+
+    border-top: none;
+  }
+
+  .flexvertical {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+    margin-top: 0;
+
+
+    height: auto;
+    border-color: #ffffff;
+    border-style:solid;
+    border-width: thin;
+  }
+
+  .flexvertical2 {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 940px;
+
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: center;
+    
+  }
+
+  .flexvertical a{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .flexego{
+    display:block;
+    text-align: left;
+}
+
+.flexego h3{
+    margin-top: auto;
+    color: #ffce3a;
+}
+
+.flexvertical2 {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 0;
+    margin-top: 0;
+
+
+    height: auto;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.breaklinecontainervertical {
+    width: 2px;
+    position: relative;
+    margin-top: 20px;
+
+    margin-right: 15px;
+    margin-left: 15px;
+    align-items: center;
+    background: #b6b6b6;
+}
+
+.breaklinevertical {
+
+    margin: auto;
+    content: "";
+    display: block;
+    margin-top: 20px;
+    margin-right: 15px;
+    height: 2px;
+    background: #b6b6b6;
+
+}
+.example-5 {
+    position: relative;
+    
+  }
+  
+  .example-5 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+.example-5 .line {
+
+    stroke-dasharray: 260;
+    stroke-width: 1px;
+    fill: transparent;
+    stroke: rgba(209, 209, 209, 0.671);
+    animation: svgAnimation 2.5s linear infinite;
+  }
+  
+@keyframes svgAnimation {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dashoffset: 1000;
+    }
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: calc(56.25% * 0.75); /* 16:9 */
+    width: 75%;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .justsettext li{
+    font-family:Arial, Helvetica, sans-serif
+  }
+
+  input[type='radio'][name='buttonGroup1'] { display:none; }
+
+  /* Clicking a label will select its corresponding hidden radio button
+     We can select that radio buttons sibling label and style it. */
+  input[type='radio'][name='buttonGroup1']:checked + label { background-color:#f0f0f0; }
+
+  input[type='radio'][name='buttonGroup2'] { display:none; }
+
+    /* Clicking a label will select its corresponding hidden radio button
+     We can select that radio buttons sibling label and style it. */
+     input[type='radio'][name='buttonGroup2']:checked + label { background-color:#f0f0f0; }
+
+  
+  input[type='radio'][name='buttonGroup3'] { display:none; }
+
+  input[type='radio'][name='buttonGroup3']:checked + label { 
+    background-color:#f0f0f0; 
+    color: #2b2b2b;
+
+  }
+
+
+  label {
+
+    outline: none;
+    padding: 7px 16px;
+    background-color: #f1f1f12a;
+    cursor: pointer;
+    font-family: WFRegular; 
+
+    
+  }
+  
+.valklist label{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color:#f1f1f12a;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: WFRegular; 
+    text-align: center;
+    justify-content: center;
+
+}
+
+  
+@font-face {
+  font-family: "WF";
+  src: url("font/WFSemibold.ttf");
+}
+
+@font-face {
+  font-family: "WFRegular";
+  src: url("font/WFRegular.ttf");
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("font/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("font/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "HelveticaRegular";
+  src: url("font/Helvetica.ttf");
+}
+
+.parent {
+  position: relative; /* Establishes a positioning context */
+}
+.image1 {
+  display: block; /* Ensures there's no extra space */
+
+
+}
+.image2 {
+  position: absolute; /* Position relative to the container */
+  top: 0; /* Aligns to the top */
+  left: 0; /* Aligns to the left */
+}
+/*
+.homecard-container {
+  display: flex;
+
+  justify-content: center;
+
+  gap:10px;
+  max-width:940px;
+
+  margin: auto;
+  padding-bottom: 0px;
+  color: #f2f2f2;
+  overflow: hidden;
+  align-items: center;
+}
+
+
+.homecard {
+
+  display: block;
+
+  height: 600px;
+  width: 400px;
+  background: #616161;
+  border-radius: 20px;
+
+
+}
+*/
+/* Parent container */
+/* Parent container */
+/* General styles */
+.homecard-container {
+  display: flex; /* Align children side by side */
+  width: 940px; /* Width of the parent container */
+  height: 600px; /* Set a height for demonstration */
+  overflow: hidden; /* Prevent overflow when children expand */
+  margin-left: auto;
+  margin-right: auto;
+  gap:10px;
+
+}
+
+.homecard {
+  flex: 1; /* Each child takes up equal space */
+  transition: flex-grow 0.3s ease; /* Smooth transition for the hover effect */
+  display: flex; /* Align content in the center */
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc; /* Background color for children */
+  text-align: center; /* Center text */
+  box-sizing: border-box; /* Ensure padding is included in the width/height */
+  overflow: hidden;
+  border-radius: 15px;
+
+}
+
+.homecard img {
+  max-width: 120%; /* Ensure image fits within the child */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
+  object-fit: fill;
+}
+
+/* Hover effect for larger screens */
+@media (min-width: 600px) {
+  .homecard:hover {
+    flex-grow: 2; /* Grow the hovered child */
+  }
+}
+
+/* Vertical layout for smaller screens */
+@media (max-width: 599px) {
+  .homecard-container {
+    flex-direction: column; /* Stack children vertically */
+  }
+
+  .homecard {
+    flex-grow: 1; /* Remove flex-grow effect */
+    width: 100%; /* Full width in vertical layout */
+    height: auto; /* Allow height to be determined by content */
+  }
+}
+
+details {
+  padding-left: 10px;
+  border-radius: 10px;
+  padding-top: 3px;
+}
+
+abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+

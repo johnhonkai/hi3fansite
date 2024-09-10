@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "WF";
+    src: url("font/WFSemibold.ttf");
+  }
+  
+  @font-face {
+    font-family: "WFRegular";
+    src: url("font/WFRegular.ttf");
+  }
+  
+  @font-face {
+    font-family: "LatoRegular";
+    src: url("font/Lato-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "RobotoRegular";
+    src: url("font/Roboto-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "HelveticaRegular";
+    src: url("font/Helvetica.ttf");
+  }

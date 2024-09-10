@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" type="text/javascript" src="java.js"></script>
+    <script language="javascript" type="text/javascript" src="betajava.js"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <title>Honkai Impact Compendium</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <li><a class="active" href="home2.html"><img src="assets/logo.png"></a></li>
+        <a href="/index.html">Valkyrie Guide</a>
+        <a href="#er">Elysian Realm</a>
+        <a href="/calendar.html">Timeline</a>
+        <a href="/betanews.html">Beta Patch Notes</a>      
+    </div>
+
+    <div class="topsection">
+        <p>This page contains info from CN beta test server that is allowed to be shared. THESE ARE NOT LEAKS!</p>
+        <label for="versionSelect">Select Version:</label>
+        <select id="versionSelect" onchange="showTabs(this.value)">
+            <option value="">--Select Version--</option>
+            <option value="7.8">7.8</option>
+            <option value="7.7">7.7</option>
+            <option value="7.6">7.6</option>
+        </select>
+
+        <!-- Container for dynamically generated tabs -->
+        <div id="betatabsContainer" style="display: none;">
+            <!-- Tabs will be inserted here dynamically -->
+        </div>
+
+        <!-- Container for dynamically generated iframe content --> 
+        <div id="betatabContentContainer">
+            <!-- Tab content will be inserted here dynamically -->
+        </div>
+    </div>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/bg.mp4" type="video/mp4">
+    </video>
+    
+</body>
+</html>

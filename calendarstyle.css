@@ -1,0 +1,264 @@
+/* General styles */
+body {
+    font-family: 'HelveticaRegular', sans-serif;
+    padding: 0;
+    background-color: #241f1f;
+    color: #FFFFFF;
+}
+
+/* Container for the entire schedule */
+.schedule-container {
+    width: 940px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Two columns: one for labels, one for content */
+    gap: 0px; /* No gap between columns */
+    background-image: linear-gradient(#8482d4, #cdccf9);
+    color: #fff;
+}
+
+/* Header section styles */
+.header {
+    grid-column: 1 / span 2; /* Header spans both columns */
+    display: grid;
+    grid-template-columns: 150px repeat(6, 1fr);
+    background-color: #333;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d1d;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.week {
+    padding: 10px;
+    background-color: #1d1d1d;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+}
+
+/* Labels grid styles */
+.labels {
+    display: grid;
+    grid-template-rows: repeat(14, 1fr); /* Ensure labels are evenly spaced */
+    background-color: #ffffff;
+}
+
+.label {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    color: #222222;
+    border-right: 1px solid #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #666;
+    pointer-events: none;
+
+}
+
+/* Events grid styles */
+.schedule-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 equal columns for events */
+    gap: 3px;
+    margin: 3px;
+    cursor: default;
+}
+
+.event {
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1d1d1d;
+    height: 40px; /* Consistent height for events */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    position: relative; /* Positioning for the image */
+    box-shadow: inset 0px 0px 0px 2px rgb(65, 21, 148);
+    transition: transform 0.2s; /* Smooth hover effect */
+    text-align: center;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+    z-index: 1; /* Increased z-index to ensure visibility over other elements */
+}
+
+.event::after {
+    content: "";
+    position: absolute;
+    right: 2px; /* Adjust the distance from the right side */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px; /* Set the width of the image */
+    height: 92%; /* Set the height of the image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: var(--event-image-url); /* Use CSS variable for dynamic images */
+    pointer-events: none; /* Allow clicks through the image */
+    z-index: -2;
+}
+
+/* Hover effect to grow the event box */
+.event:hover {
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+
+/* Event details styling for centered positioning relative to .schedule-content */
+.event-details {
+    position: absolute; /* Position relative to the nearest positioned ancestor (.schedule-content) */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering the div */
+    width: 400px;
+    
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    z-index: 1000; /* Higher z-index to ensure it appears above other content */
+    display: none; /* Hidden by default */
+
+    line-height: 23px;
+}
+
+.event-details p {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Ensure .schedule-content is positioned relative for absolute positioning */
+.schedule-content {
+    position: relative; /* Establish a positioned ancestor for .event-details */
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-4 {
+    grid-column: span 4;
+    
+}
+
+.span-5 {
+    grid-column: span 5;
+}
+
+.span-6 {
+    grid-column: span 6;
+}
+
+/* Video background */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+body{
+    margin:0;
+}
+
+.topnav {
+    position: sticky;
+    display:flex;
+    background-color: #333;
+    overflow: hidden;
+    align-items: center;
+
+    height: 60px;
+    width: auto;
+    margin-bottom: 5px;
+    top: 0;
+
+    padding: 0;
+
+    justify-content: end;
+    padding-right: 20px;
+    z-index: 22;
+
+    font-family: WF;
+
+}
+
+.topnav img {
+    height: auto;
+    width: auto;
+    max-height: 30px;
+    max-width: 250px;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family:WF;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffce3a, #ffce3a 50%, #f2f2f2 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 900ms ease;
+    
+}
+
+
+.topnav li:first-child {
+    /* setting the margin of the inline-end of the
+       first-child <li> element to 'auto', in order
+       to push the first-child away from the rest of
+       the content: */
+    margin-inline-end: auto;
+    list-style-type: none;
+  }
+  
+  .topnav a:hover {
+      color: #ffce3a;
+      background-position: 0 100%;
+  
+  }
+
+  .versionnum {
+    text-align: center;
+  }
+
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("font/Helvetica.ttf");
+}
+
+@font-face {
+    font-family: "WF";
+    src: url("font/WFSemibold.ttf");
+  }
+  

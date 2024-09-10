@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" type = "text/javascript" src="java.js"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <title>Honkai Impact Compendium</title>
+    
+</head>
+<body>
+    
+    <div class="topnav">
+        
+        <li><a class="active" href="home2.html"><img src="assets/logo.png"></a></li>
+        <a href="/index.html">Valkyrie Guide</a>
+        <a href="#er">Elysian Realm</a>
+        <a href="/calendar.html">Timeline</a>
+        <a href="betanews.html">Beta Patch Notes</a>      
+
+    </div>
+
+    <h1>Choose a battlesuit</h1>
+
+
+    <div class="helpsort">
+
+        <div class="btnparent">
+            <div id="myBtnContainer1" class="btnfilter">
+            <input type="radio" name="buttonGroup1" value="all" id="all1" onclick="filterElements()" checked><label for="all1">
+                <img src="assets/meibald.webp" alt="">
+            </label>
+
+            <input type="radio" name="buttonGroup1" value="light" id="light" onclick="filterElements()"><label for="light">
+            <img src="assets/element/Core_Lightning_DMG.png" alt="">
+            </label>
+
+            <input type="radio" name="buttonGroup1" value="fire" id="fire" onclick="filterElements()"><label for="fire">
+            <img src="assets/element/Core_Fire_DMG.png" alt="">
+            </label>
+
+            <input type="radio" name="buttonGroup1" value="ice" id="ice" onclick="filterElements()"><label for="ice">
+            <img src="assets/element/Core_Ice_DMG.png" alt="">
+            </label>
+
+            <input type="radio" name="buttonGroup1" value="phy" id="phy" onclick="filterElements()"><label for="phy">
+            <img src="assets/element/Core_Physical.png" alt="">
+            </label>
+            </div>
+
+<div id="myBtnContainer2" class="btnfilter">
+    <input type="radio" name="buttonGroup2" value="all" id="all2" onclick="filterElements()" checked><label for="all2">
+        <img src="assets/meibald.webp" alt="">
+
+        </label>
+    <input type="radio" name="buttonGroup2" value="mech" id="mech" onclick="filterElements()"><label for="mech">
+        <img src="assets/type/IconMECH.png" alt="">   
+    </label>
+    <input type="radio" name="buttonGroup2" value="bio" id="bio" onclick="filterElements()"><label for="bio">
+        <img src="assets/type/IconBIO.png" alt="Option 1">   
+    </label>
+    <input type="radio" name="buttonGroup2" value="psy" id="psy" onclick="filterElements()"><label for="psy">
+        <img src="assets/type/IconPSI.png" alt="Option 1">  
+    </label>
+    <input type="radio" name="buttonGroup2" value="qua" id="qua" onclick="filterElements()"><label for="qua">
+        <img src="assets/type/IconQUA.png" alt="Option 1">  
+    </label>
+    <input type="radio" name="buttonGroup2" value="img" id="img" onclick="filterElements()"><label for="img">
+        <img src="assets/type/IconIMG.png" alt="Option 1">  
+    </label>
+    <input type="radio" name="buttonGroup2" value="sd" id="sd" onclick="filterElements()"><label for="sd">
+        <img src="assets/type/IconSD.webp" alt="Option 1">  
+    </label>
+</div>
+    </div>
+    </div>
+
+    
+    <div class="flexvertical2">
+    <div id="myBtnContainer" class="flexhorizontal5">
+        <input type="radio" name="buttonGroup3" value="all" id="all3" onclick="filterElements()" checked><label for="all3">
+            P1 + P2 Valks
+        </label>
+
+        <input type="radio" name="buttonGroup3" value="ws" id="ws" onclick="filterElements()"><label for="ws">
+            World Star
+        </label>
+
+        <input type="radio" name="buttonGroup3" value="wod" id="wod" onclick="filterElements()"><label for="wod">
+            Wheel of Destiny
+        </label>
+
+        <input type="radio" name="buttonGroup3" value="roo" id="roo" onclick="filterElements()"><label for="roo">
+            Rite of Oblivion
+        </label>
+
+        <input type="radio" name="buttonGroup3" value="p1" id="p1" onclick="filterElements()"><label for="p1">
+            Part 1 Valk
+        </label>
+
+        
+
+        <!--         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('ws')"> World Star</button>
+        <button class="btn" onclick="filterSelection('wod')"> Wheel of Destiny</button>
+        <button class="btn" onclick="filterSelection('roo')"> Rite of Oblivion</button>
+        <button class="btn" onclick="filterSelection('p1')"> Part 1 Valk</button> -->
+
+    </div>
+    <div class="valklist" id="valkcards">
+
+        <div class="valkcard" data-category1="light" data-category2="mech" data-category3="roo">
+            <a href=""> <img src="valkportrait/Vestige of Myriad Celestia.png" alt=""> Lone Planetfarer</a> 
+        </div>
+
+        <div class="valkcard" data-category1="light" data-category2="qua" data-category3="ws">
+            <a href="/simp.html"> <img src="valkportrait/Theresa Schicksal's Imperative.png" alt=""> Schicksal's Imperative</a> 
+        </div>
+
+        <div class="valkcard" data-category1="phy" data-category2="sd" data-category3="wod">
+            <a href="#jd"> <img src="valkportrait/Songque Jovial Deception.png" alt=""> Jovial Deception: Shadowdimmer</a> 
+        </div>
+
+        <div class="valkcard" data-category1="fire" data-category2="psy" data-category3="wod">
+            <a href="#ld"> <img src="valkportrait/Lantern Lone Destruction.png" alt=""> Lone Destruction: Shadowchaser</a> 
+        </div>
+
+        <div class="valkcard" data-category1="ice" data-category2="mech" data-category3="wod">
+            <a href="#jd"> <img src="valkportrait/Thelema Mad Pleasure.png" alt=""> Mad Pleasure: Shadowbringer</a> 
+        </div>
+
+        <div class="valkcard" data-category1="light" data-category2="sd" data-category3="ws">
+            <a href="#dafl"> <img src="valkportrait/Senadina Deepspace Anchor.png" alt=""> Deepspace Anchor: First Light</a> 
+        </div>
+
+        <div class="valkcard" data-category1="fire" data-category2="psy" data-category3="roo">
+            <a href="#vbm"><img src="valkportrait/Coralie Valkyrie Blasthammer.png" alt="">Valkyrie Blastmetal</a> 
+        </div>
+
+        <div class="valkcard" data-category1="light" data-category2="mech" data-category3="ws">
+            <a href="#vbs"> <img src="valkportrait/Helia Valkyrie Boltstorm.png" alt=""> Valkyrie Boltstorm</a> 
+        </div>
+
+        <div class="valkcard" data-category1="fire" data-category2="bio" data-category3="p1" >
+            <a href="#simp"> <img src="valkportrait/Fu Hua Fenghuang of Vicissitude.png" alt=""> Fenghuang of Vicissitude</a> 
+        </div>
+
+        <div class="valkcard" data-category1="light" data-category2="psy" data-category3="p1" >
+            <a href="#simp"> <img src="valkportrait/Theresa Lunar Vow.png" alt=""> Lunar Vow: Crimson Love</a> 
+        </div>
+
+
+    </div>
+</div>
+    
+    
+    
+    
+
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/bg.mp4" type="video/mp4">
+      </video>
+    
+</body>
+
+
+</html>
