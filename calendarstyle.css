@@ -15,6 +15,11 @@ body {
     gap: 0px; /* No gap between columns */
     background-image: linear-gradient(#8482d4, #cdccf9);
     color: #fff;
+    border-radius: 5px;
+}
+
+.containergreen{
+    background-image: linear-gradient(#0eb4b9, #bfe1e2);
 }
 
 /* Header section styles */
@@ -26,21 +31,52 @@ body {
     text-align: center;
     color: #FFFFFF;
 }
+.centertext{
+    text-align: center;
+
+    color: #b8b8b8;
+    width:900px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.eventheader {
+    grid-column: 1 / span 2; /* Header spans both columns */
+    display: grid;
+    background-color: #333;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+
 
 .title {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1d1d1d;
+    background-color: #24292ed5;
     font-weight: bold;
     padding: 10px;
     font-size: 1rem;
     color: #FFFFFF;
+
+}
+
+.eventtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24292ed5;
+    font-family: teko;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+
 }
 
 .week {
     padding: 10px;
-    background-color: #1d1d1d;
+    background-color: #24292ed5;
     font-weight: bold;
     font-size: 0.9rem;
     color: #FFFFFF;
@@ -49,23 +85,31 @@ body {
 /* Labels grid styles */
 .labels {
     display: grid;
-    grid-template-rows: repeat(14, 1fr); /* Ensure labels are evenly spaced */
+    grid-template-rows: repeat(8, 1fr); /* Ensure labels are evenly spaced */
     background-color: #ffffff;
 }
+
+
 
 .label {
     font-weight: bold;
     text-align: center;
-    padding: 10px;
+
     font-size: 1rem;
     color: #222222;
-    border-right: 1px solid #666;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    border-right: 1px solid #666;
     border-bottom: 1px solid #666;
     pointer-events: none;
+    position:relative; 
+}
 
+
+.label.labelpurple:nth-child(even){
+    color: #7516c4;
 }
 
 /* Events grid styles */
@@ -73,17 +117,22 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* 6 equal columns for events */
     gap: 3px;
-    margin: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
     cursor: default;
 }
 
 .event {
     background-color: #ffffff;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-family: sfprodisplay;
     font-weight: bold;
+    letter-spacing: 0.01em;
+
+
     color: #1d1d1d;
-    height: 40px; /* Consistent height for events */
+    height: 33px; /* Consistent height for events */
     display: flex;
     align-items: center; /* Center text vertically */
     justify-content: center; /* Center text horizontally */
@@ -93,6 +142,12 @@ body {
     text-align: center;
     text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
     z-index: 1; /* Increased z-index to ensure visibility over other elements */
+
+    border-radius: 5px;
+}
+
+.eventgreen{
+    box-shadow: inset 0px 0px 0px 2px rgb(1, 54, 43);
 }
 
 .event::after {
@@ -110,36 +165,49 @@ body {
     z-index: -2;
 }
 
+.event.eventfullpic::after {
+    width: 98%; /* Set the width of the image */
+}
+
+.event.eventlongerpic::after {
+    width: 235px; /* Set the width of the image */
+}
+
 /* Hover effect to grow the event box */
 .event:hover {
     transform: scale(1.05); /* Slightly grow on hover */
 }
 
+/* Ensure parent containers are positioned relative */
+.schedule-content, .events-content {
+    position: relative; /* This makes sure the absolute positioning of event-details works */
+}
 
-/* Event details styling for centered positioning relative to .schedule-content */
+/* Center the event-details container */
 .event-details {
-    position: absolute; /* Position relative to the nearest positioned ancestor (.schedule-content) */
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centering the div */
-    width: 400px;
-    
-    background-color: #333;
+    transform: translate(-50%, -50%); /* Center the element */
+    width: 450px;
+    background-color: #222222;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    z-index: 1000; /* Higher z-index to ensure it appears above other content */
+    z-index: 1000; /* Make sure it appears above other content */
     display: none; /* Hidden by default */
+    color: #fff; /* Text color */
+    text-align: center; /* Center text inside */
 
-    line-height: 23px;
 }
 
-.event-details p {
-    color: #fff;
-    font-size: 1rem;
-    text-align: center;
+.event-details li{
+    text-align: left;
 }
 
+
+
+/* Ensure that the close button is visible */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -149,18 +217,20 @@ body {
     cursor: pointer;
 }
 
+
 /* Ensure .schedule-content is positioned relative for absolute positioning */
 .schedule-content {
     position: relative; /* Establish a positioned ancestor for .event-details */
 }
 
+
 .span-2 {
     grid-column: span 2;
 }
 
+
 .span-4 {
-    grid-column: span 4;
-    
+    grid-column: span 4;    
 }
 
 .span-5 {
@@ -170,6 +240,122 @@ body {
 .span-6 {
     grid-column: span 6;
 }
+
+
+
+/* Events container styles */
+.events-container {
+    width: 940px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Two columns: one for labels, one for content */
+    gap: 0px;
+    background-image: linear-gradient(#8482d4, #cdccf9);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.plsgreen2{
+    background-image: linear-gradient(#0eb4b9, #bfe1e2);   
+}
+
+/* Header section styles for events */
+.events-container .header {
+    grid-column: 1 / span 2; /* Header spans both columns */
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+/* Labels grid styles */
+.events-container .labels {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr); /* Adjust for 8 events */
+    background-color: #ffffff;
+
+}
+
+.events-container .labels78 {
+    display: grid;
+    grid-template-rows: repeat(11, 1fr); /* Adjust for 8 events */
+    background-color: #ffffff;
+}
+
+
+.label.labelpurple:nth-child(even){
+    color: #7516c4;
+}
+
+.label.labelazure:nth-child(even){
+    color: #077e64;
+}
+
+
+.events-container .label {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #222222;
+    border-right: 1px solid #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #666;
+    pointer-events: none;
+}
+
+/* Events grid styles */
+.events-container .events-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Similar 6 equal columns */
+    gap: 3px;
+    margin: 3px;
+    cursor: default;
+}
+
+.events-container .event {
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: sfprodisplay;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    color: #1d1d1d;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    box-shadow: inset 0px 0px 0px 2px rgb(65, 21, 148);
+    transition: transform 0.2s;
+    text-align: left;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Spanning classes */
+.span-2 { grid-column: span 2; }
+.span-3 { grid-column: span 3; }
+.span-4 { grid-column: span 4; }
+.span-5 { grid-column: span 5; }
+.span-6 { grid-column: span 6; }
+
+.events-container .event:hover {
+    transform: scale(1.05);
+}
+
+.events-container .eventcongreen{
+    box-shadow: inset 0px 0px 0px 2px rgb(1, 54, 43);
+}
+
+
+/* Event details pop-up styling remains the same as the schedule */
+
 
 /* Video background */
 #myVideo {
@@ -185,36 +371,40 @@ body{
     margin:0;
 }
 
-.topnav {
-    position: sticky;
-    display:flex;
+.topnav-container{
     background-color: #333;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999; /* Ensure it's above the dropdown */
+  }
+  
+  .topnav {
+    position: sticky;
+    display: flex;
+    width: 950px;
     overflow: hidden;
     align-items: center;
-
     height: 60px;
-    width: auto;
-    margin-bottom: 5px;
+  
     top: 0;
-
     padding: 0;
-
-    justify-content: end;
+    justify-content: space-between;
     padding-right: 20px;
-    z-index: 22;
-
-    font-family: WF;
-
-}
-
-.topnav img {
+    z-index: 9999; /* Ensure it's above the dropdown */
+  }
+  
+  
+  
+  .topnav img {
     height: auto;
     width: auto;
     max-height: 30px;
     max-width: 250px;
-}
-
-.topnav a {
+  }
+  
+  .topnav a {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -229,27 +419,109 @@ body{
     background-size: 200% 100%;
     background-position: 100%;
     transition: background-position 900ms ease;
+    letter-spacing: 0em;
     
-}
-
-
-.topnav li:first-child {
-    /* setting the margin of the inline-end of the
-       first-child <li> element to 'auto', in order
-       to push the first-child away from the rest of
-       the content: */
-    margin-inline-end: auto;
-    list-style-type: none;
+  }
+  
+  
+  .topnav li:first-child {
+  /* setting the margin of the inline-end of the
+     first-child <li> element to 'auto', in order
+     to push the first-child away from the rest of
+     the content: */
+  margin-inline-end: auto;
+  list-style-type: none;
   }
   
   .topnav a:hover {
-      color: #ffce3a;
-      background-position: 0 100%;
+    color: #ffce3a;
+    background-position: 0 100%;
   
+  }
+  
+  /* General styles remain the same as before */
+  
+  .navicon {
+    display: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+    margin:5px;
+    border: 1px solid rgba(255, 255, 255, 0.26); /* Add a white border */
+    border-radius: 3px;      /* Add border radius */
+    background-color: transparent; /* Optional: Set the background to transparent */
+  }
+  
+  .nav-links {
+    display: flex; /* Show by default for desktop view */
+    justify-content: flex-end; /* Align links to the right */
+    flex-grow: 1;
+  }
+  
+  .nav-links a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Mobile styles */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default in mobile view */
+        flex-direction: column;
+        position: fixed;
+        top: 60px; /* Position below the topnav */
+        left: 0;
+        width: 100%;
+        height: calc(100% - 60px); /* Full-screen height minus topnav height */
+        background-color: #333;
+        z-index: 9998;
+        justify-content: flex-start; /* Align items to the start */
+        align-items: flex-start; /* Align items to the left */
+    }
+  
+    .nav-links.active {
+        display: flex; /* Show the menu when active class is added */
+    }
+  
+    .nav-links a {
+        padding: 20px;
+        text-align: left; /* Align text to the left */
+        width: 100%;
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        background-color: transparent;
+        border-bottom: 1px solid #444;
+    }
+  
+    .navicon {
+        display: block; /* Show the hamburger icon in mobile view */
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
   }
 
   .versionnum {
     text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .versionnum::before{
+    content: "";
+    background-color: #5486f3;
+    width: 4px;
+    height:30px;
+  
+    clear: both;
+    display: inline-block;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 0px;
   }
 
 @font-face {
@@ -261,4 +533,297 @@ body{
     font-family: "WF";
     src: url("font/WFSemibold.ttf");
   }
+
+  @font-face {
+    font-family: "WFRegular";
+    src: url("font/WFRegular.ttf");
+  }
   
+  @font-face {
+    font-family: "sfprodisplaylight";
+    src: url("font/sfprodisplaylight.ttf");
+  }
+
+  @font-face {
+    font-family: "sfprodisplay";
+    src: url("font/SFPRODISPLAYREGULAR.OTF");
+  }
+
+
+  @font-face {
+    font-family: "teko";
+    src: url("font/Teko.ttf");
+  }
+  
+  .bosscontainer {
+    width: 940px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.925);
+    border-radius: 5px;
+    padding-bottom: 6px;
+}
+
+.bosstable-header {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 3.7fr; /* Matches the table row */
+    text-align: center;
+    padding-top: 10px;
+    font-family: teko;
+    background-color: #303030c2;
+    background-size:cover;
+    border-radius: 5px;
+    position: relative;
+    z-index: 5;
+}
+
+.bosstable-header::before {    
+    content: "";
+    background-image: url("assets/download.webp");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+.bossheader-item {
+    font-size: 25px;
+    border-bottom: 2px solid #230031;
+    padding-bottom: 2px; /* Add padding to the bottom for better alignment */
+}
+
+.bosstable-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr; /* Matches the header */
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.week-number {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+    color: #181818;
+}
+
+.ex-abyss {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-right: 20px;
+}
+
+.memorial-arena {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    padding-right: 6px;
+}
+
+.boss-box {
+    position: relative;
+    background-color: #06284e;
+    height: 65px;
+    width: 155px;
+    border-radius: 5px;
+}
+
+.date {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: rgb(224, 114, 10);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 5px;
+    z-index: 2;
+    width:45px;
+}
+
+.boss-name {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-shadow: -1px 1px 1px black, 1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+}
+
+.boss-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain; /* Set the image to fit */
+    background-repeat: no-repeat; /* Prevent repeat */
+    background-position: center; /* Center the image */
+    opacity: 1;
+}
+
+/* Special case for Memorial Arena: only the leftmost box has the date */
+.memorial-arena .boss-box:not(:first-child) .date {
+    display: none;
+}
+
+.topsection {
+    display: flex;
+    align-items:center;
+    justify-content: center;  
+    text-align: center;
+    color: white;
+  }
+
+
+  label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+}
+
+  .calendartopcontainer {
+    width: 940px;
+    height:30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+/* General Footer Styles */
+.footer {
+  background-color: #1c1c1ea9;
+  color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 840px;
+  margin: 0 auto;
+
+}
+
+.footer-left {
+  flex: 1;
+  text-align: left;
+
+  justify-content: center;
+  margin: 20px;
+  align-items: center;
+
+}
+
+.footer-right {
+  flex: 2;
+  text-align: left;
+}
+
+.footer-right h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.footer-left p {
+  font-size: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+
+
+}
+
+
+
+
+.social-icons a {
+  display: inline-block;
+  width: 40px; /* Set uniform width */
+  height: 40px; /* Set uniform height */
+  border: 2px solid #f1f1f1; /* White border */
+  transition: all 0.3s ease;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.social-icons a i{ 
+  margin-left: 2px;
+  height: 20px;
+  margin-top: 10px; 
+
+  font-size: 20px;
+}
+
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-right {
+    padding: 0;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
+
+.hoyolab-icon {
+  width: 36px;
+  height: auto;
+
+  transition: all 0.3s ease;
+  margin-top: 5px;
+}
+
+.hoyolab-icon:hover {
+  filter: invert(48%) sepia(30%) saturate(500%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.social-icons a:hover {
+  color: #0dffa2;
+  border-color: #60ffc2;
+  
+}

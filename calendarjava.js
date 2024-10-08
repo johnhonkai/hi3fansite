@@ -1,34 +1,46 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const events = document.querySelectorAll('.event');
+    const events = document.querySelectorAll('.event');
 
-  events.forEach(event => {
-      // Set the background image for the ::after pseudo-element
-      const imageUrl = event.dataset.image;
-      if (imageUrl) {
-          event.style.setProperty('--event-image-url', `url(${imageUrl})`);
-      }
+    events.forEach(event => {
+        // Set the background image for the ::after pseudo-element
+        const imageUrl = event.dataset.image;
+        if (imageUrl) {
+            event.style.setProperty('--event-image-url', `url(${imageUrl})`);
+        }
 
-      event.addEventListener('click', function() {
-          // Remove any existing event-details divs
-          const existingDetails = document.querySelectorAll('.event-details');
-          existingDetails.forEach(detail => detail.remove());
+        event.addEventListener('click', function() {
+            // Identify the correct container (schedule-content or events-content)
+            const isScheduleEvent = this.closest('.schedule-content');
+            const isEventContent = this.closest('.events-content');
 
-          // Create a new div for event details
-          const eventDetails = document.createElement('div');
-          eventDetails.classList.add('event-details');
+            let targetDetailsContainer;
 
-          // Set the content based on data attribute
-          eventDetails.innerHTML = `
-              <p>${this.dataset.detail}</p>
-              <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
-          `;
+            if (isScheduleEvent) {
+                // Target schedule-details container
+                targetDetailsContainer = document.getElementById('schedule-details');
+            } else if (isEventContent) {
+                // Target event-details container
+                targetDetailsContainer = document.getElementById('event-details');
+            }
 
-          // Append the event details div to the .schedule-content
-          const scheduleContent = document.querySelector('.schedule-content');
-          scheduleContent.appendChild(eventDetails);
+            // Clear any previous details in the target container
+            targetDetailsContainer.innerHTML = '';
 
-          // Show the div
-          eventDetails.style.display = 'block';
-      });
-  });
+            // Create a new div for event details
+            const eventDetails = document.createElement('div');
+            eventDetails.classList.add('event-details');
+
+            // Set the content based on data attribute
+            eventDetails.innerHTML = `
+                <p>${this.dataset.detail}</p>
+                <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+            `;
+
+            // Append the details to the correct container
+            targetDetailsContainer.appendChild(eventDetails);
+
+            // Center the event-details in the target container
+            eventDetails.style.display = 'block';
+        });
+    });
 });
