@@ -20,6 +20,7 @@ body {
 }
 
 
+
 .containergreen{
     background-image: linear-gradient(#0eb4b9, #bfe1e2);
 }
@@ -696,12 +697,13 @@ select {
 }
 
   .calendartopcontainer {
-    width: 940px;
-    height:30px;
+    max-width: 940px;
+    height:auto;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -810,6 +812,7 @@ select {
     justify-content: center;
     margin-top: 15px;
   }
+
 }
 
 .hoyolab-icon {
@@ -828,4 +831,15 @@ select {
   color: #0dffa2;
   border-color: #60ffc2;
   
+}
+
+.topnote{
+
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  color:#c9c9c9;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
