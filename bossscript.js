@@ -64,8 +64,8 @@ const bossesData = {
   ],
 
   typecounter: [
-    { id:'typekasumi', name: 'Kasumi', mechanics: 'Can choose fire or ice vulnerable shield.', weakness: 'None', icon: "assets/type/IconMECH.png", image: "assets/Bosses/Yae Kasumi.webp", weather: "Counter: Type counter effect is 20% stronger.", videos: ['By CrusherKing', 'By PhysicalPro'] },
-    { id:'typeandrius', name: 'Dominator of Wolves', mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.', weakness: 'Immune to Ice DMG.', icon: "assets/type/IconBIO.png", image: "assets/Bosses/Dominator of Wolves.webp", weather: "Counter: Type counter effect is 20% stronger.", videos: ['By CrusherKing', 'By PhysicalPro'] }
+    { id:'typekasumi', name: 'Kasumi', mechanics: 'Can choose fire or ice vulnerable shield.', weakness: 'None', icon: "assets/type/IconMECH.png", image: "assets/Bosses/Yae Kasumi.webp", weather: "Counter: Type counter effect is 20% stronger."},
+    { id:'typeandrius', name: 'Dominator of Wolves', mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.', weakness: 'Immune to Ice DMG.', icon: "assets/type/IconBIO.png", image: "assets/Bosses/Dominator of Wolves.webp", weather: "Counter: Type counter effect is 20% stronger."}
 
   
   ],
