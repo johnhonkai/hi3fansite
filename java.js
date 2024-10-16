@@ -178,3 +178,54 @@ events.forEach(event => {
   eventElement.appendChild(barElement);
   timelineContainer.appendChild(eventElement);
 });
+
+const accordionToggles = document.querySelectorAll('.accordion-toggle');
+
+accordionToggles.forEach(toggle => {
+  toggle.addEventListener('click', function() {
+    // Toggle the active class for this toggle
+    this.classList.toggle('active');
+    
+    // Get the next sibling (the accordion content)
+    const content = this.nextElementSibling;
+
+    // If the content is already open, close it
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      // Otherwise, open the content
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});
+
+
+//mobile navbar
+function toggleNav() {
+  var navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("active");
+}
+
+// Ensure the correct display of the menu when resizing the window
+window.addEventListener('resize', function () {
+  var navLinks = document.getElementById("navLinks");
+  if (window.innerWidth > 768) {
+      navLinks.classList.remove("active"); // Remove active class on desktop view
+  }
+});
+
+
+    // Smooth scroll for the second navbar
+    document.querySelectorAll('.second-navbar a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            window.scrollTo({
+                top: targetSection.offsetTop - document.querySelector('.second-navbar').offsetHeight,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+  

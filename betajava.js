@@ -15,8 +15,18 @@ const versionTabs = {
         { name: 'Elysian Realm', url: 'https://rentry.co/er77' }
     ],
     '7.8': [
-        { name: 'Coming Soon', url: 'https://rentry.co/78-first' },
-        { name: 'I am Come', url: 'https://rentry.co/78-second' }
+        { name: "Youtube Overview", url: 'https://www.youtube.com/embed/KOJk-deNeVU?controls=1 ' },
+        { name: 'Patch Notes', url: 'https://rentry.co/78log' },
+        { name: 'Vita Valk', url: 'https://rentry.co/vitagundam' },
+        { name: 'Vita Gears', url: 'https://rentry.co/vitagears' },
+        { name: 'Kiana Divine Key', url: 'https://rentry.co/kianareeves' },
+        { name: 'Elysian Realm', url: 'https://rentry.co/78er' }
+    ],
+
+    '7.9': [
+        { name: "Sparkle", url: 'https://rentry.co/asdadadas' },
+        { name: "Sparkle Gears", url: 'https://rentry.co/asdadadas' },
+
     ]
 };
 

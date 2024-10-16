@@ -1,166 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <title>Honkai Impact 3rd Guide</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://i.imgur.com/6v5RK27.jpeg" />
+
+    <meta property="og:title" content="Honkai Impact 3rd Guide" />
+    <meta property="og:description" content="Updated Honkai Impact 3rd character builds, beta info and more" />
+    <meta property="og:url" content="https://marisaimpact.com" />
+    <meta name="twitter:card" content="summary_large_image">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script language="javascript" type = "text/javascript" src="java.js"></script>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
-    <title>Honkai Impact Compendium</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     
 </head>
 <body>
     
-    <div class="topnav">
-        
-        <li><a class="active" href="home2.html"><img src="assets/logo.png"></a></li>
-        <a href="/index.html">Valkyrie Guide</a>
-        <a href="#er">Elysian Realm</a>
-        <a href="/calendar.html">Timeline</a>
-        <a href="betanews.html">Beta Patch Notes</a>      
-
+    <div class="topnav-container">
+        <div class="topnav">
+            <li><a class="active" href="index.html"><img src="assets/logo.png"></a></li>
+            <div class="nav-links" id="navLinks">
+                <a href="charselect.html">Valkyrie</a>
+                <a href="charer.html">Elysian Realm</a>
+                <a href="calendar.html">Timeline</a>
+                <a href="boss.html">Abyss</a>
+                <a href="betanews.html">Beta Updates</a>
+            </div>
+            <a href="javascript:void(0);" class="navicon" onclick="toggleNav()">
+                &#9776;
+            </a>
+        </div>
     </div>
 
-    <h1>Choose a battlesuit</h1>
+
+    <div class="homecontainer">
+        <div class="homebanner">
+            <img src="assets/banner.png" alt="Banner Image">
+        </div>
 
 
-    <div class="helpsort">
+        <!-- Short Info Section -->
+        <div class="info-section">
+            <div class="info-card homenews-card">
+                <div class="info-card-top">
+                    <div><h2>PATCH TIME </h2></div>
+                    <div><img src="assets/dududoro.png" style="width:35px;height:35px;"></div>
+                </div>
+                <p><span style="color:rgb(255, 217, 114)">REGIONAL SERVERS</span><br/>
+                - Current: v7.7 Week 6 <br/>
+                - v7.8 is on Oct 17<br/>
+                - v7.9 is on Nov 28
 
-        <div class="btnparent">
-            <div id="myBtnContainer1" class="btnfilter">
-            <input type="radio" name="buttonGroup1" value="all" id="all1" onclick="filterElements()" checked><label for="all1">
-                <img src="assets/meibald.webp" alt="">
-            </label>
-
-            <input type="radio" name="buttonGroup1" value="light" id="light" onclick="filterElements()"><label for="light">
-            <img src="assets/element/Core_Lightning_DMG.png" alt="">
-            </label>
-
-            <input type="radio" name="buttonGroup1" value="fire" id="fire" onclick="filterElements()"><label for="fire">
-            <img src="assets/element/Core_Fire_DMG.png" alt="">
-            </label>
-
-            <input type="radio" name="buttonGroup1" value="ice" id="ice" onclick="filterElements()"><label for="ice">
-            <img src="assets/element/Core_Ice_DMG.png" alt="">
-            </label>
-
-            <input type="radio" name="buttonGroup1" value="phy" id="phy" onclick="filterElements()"><label for="phy">
-            <img src="assets/element/Core_Physical.png" alt="">
-            </label>
+                <p><span style="color:rgb(255, 137, 133)">CN SERVER</span><br/>
+                    - Current: v7.8 Week 4 <br/>
+                    - v7.9 is on Oct 31<br/>
             </div>
 
-<div id="myBtnContainer2" class="btnfilter">
-    <input type="radio" name="buttonGroup2" value="all" id="all2" onclick="filterElements()" checked><label for="all2">
-        <img src="assets/meibald.webp" alt="">
+            <div class="info-card homenews-card">
+                <div class="info-card-top">
+                    <div><h2>7.9 INFO DATE</h2></div>
+                    <div><img src="assets/hosbrick2.png" style="width:40px;height:40px;"></div>
+                </div>
+                <p>- New Content Teaser: Oct 10-11<br/>
+                - Beta v1 (Private): Oct 11 <br/>
+                - Dev Video: Oct 17 <br/>
+                - Beta v2: Oct 18 <br/>
+                - Beta v3: Oct 25 <br/>
+                - Dev Livestream: Oct 26 <br/><br/>
+                <span style="color:rgb(207, 207, 207)">Note: Estimated Date</span>
 
-        </label>
-    <input type="radio" name="buttonGroup2" value="mech" id="mech" onclick="filterElements()"><label for="mech">
-        <img src="assets/type/IconMECH.png" alt="">   
-    </label>
-    <input type="radio" name="buttonGroup2" value="bio" id="bio" onclick="filterElements()"><label for="bio">
-        <img src="assets/type/IconBIO.png" alt="Option 1">   
-    </label>
-    <input type="radio" name="buttonGroup2" value="psy" id="psy" onclick="filterElements()"><label for="psy">
-        <img src="assets/type/IconPSI.png" alt="Option 1">  
-    </label>
-    <input type="radio" name="buttonGroup2" value="qua" id="qua" onclick="filterElements()"><label for="qua">
-        <img src="assets/type/IconQUA.png" alt="Option 1">  
-    </label>
-    <input type="radio" name="buttonGroup2" value="img" id="img" onclick="filterElements()"><label for="img">
-        <img src="assets/type/IconIMG.png" alt="Option 1">  
-    </label>
-    <input type="radio" name="buttonGroup2" value="sd" id="sd" onclick="filterElements()"><label for="sd">
-        <img src="assets/type/IconSD.webp" alt="Option 1">  
-    </label>
-</div>
+
+            </div>
+
+            <div class="info-card homenews-card">
+
+                <div class="info-card-top">
+                    <div><h2>7.8 CRYSTAL INCOME</h2></div>
+                    <div><img src="assets/Material/crystal.png" style="width:40px;height:40px;"></div>
+                </div>
+                <p>CRYSTAL:<br/>
+                - F2P: 16,445<br/>
+                - Monthly: 19,965<br/>
+                - Monthly+BP: 21,285
+                <br/><br/>
+                CARDS:<br/>
+                - 26 Supply Cards (Battlesuit + Equipment) <br/>
+                - 2 Fes Battlesuit 10-Pull Card
+                <br/><br/>
+                DISCOUNT: Vita battlesuit supply first ten pulls are free
+                <br/><br/>
+                <span style="color:rgb(207, 207, 207)">Note: Estimation using Agony 3. </span><a href="https://www.miyoushe.com/bh3/article/57599585">[SOURCE]</a>
+
+            </div>
+        </div>
+
+        <div class="breaklinecontainer">
+            <div class="breakline2"></div>
+        </div>
+
+        <div class="homenews-section">
+
+            <div class="homenews-card"><a href="LP.html">
+                <img src="https://upload-os-bbs.hoyolab.com/upload/2024/09/29/6120146421318151e43fa855c74c9947_5529033049987447681.png" alt="News 1">
+                <div class="homenews-content">
+                    <h2>NEW BATTLESUIT</h2>
+                    <p>Vita - Lone Planetfarer</p>
+                </div></a>
+            </div>
+            <div class="homenews-card"><a href="betanews.html">
+                <img src="assets/newstab/news2.png" alt="News 2">
+                <div class="homenews-content">
+                    <h2>7.9 BETA NEWS</h2>
+                    <p>Sparkle is coming in v7.9!</p>
+                </div></a>
+            </div>
+            <div class="homenews-card"><a href="https://www.youtube.com/watch?v=ao2O1n_Sbpc">
+                <img src="assets/newstab/news3.png" alt="News 3">
+                <div class="homenews-content">
+                    <h2>LATEST VID FROM EARTH</h2>
+                    <p>Check out Marisa Honkai's channel</p>
+                </div></a>
+
+            </div>
+        </div>
+
+        <div class="homenews-section">
+
+            <div class="homenews-card"><a href="LP.html">
+                <img src="assets/newstab/arustat.jpg" alt="News 1">
+                <div class="homenews-content">
+                    <h2>ARUSTAT SITE</h2>
+                    <p>Check out Arustat site for HI3 teambuild and more data</p>
+                </div></a>
+            </div>
+
+            <div class="homenews-card"><a href="LP.html">
+                <img src="assets/news.webp" alt="News 1">
+                <div class="homenews-content">
+                    <h2>NO DATA</h2>
+
+                </div></a>
+            </div>
+
+
+            <div class="homenews-card"><a href="LP.html">
+                <img src="assets/news.webp" alt="News 1">
+
+
+                <div class="homenews-content">
+                    <h2>NO DATA</h2>
+                </div></a>
+            </div>
+
+
+        </div>
+
+
+
     </div>
-    </div>
-
-    
-    <div class="flexvertical2">
-    <div id="myBtnContainer" class="flexhorizontal5">
-        <input type="radio" name="buttonGroup3" value="all" id="all3" onclick="filterElements()" checked><label for="all3">
-            P1 + P2 Valks
-        </label>
-
-        <input type="radio" name="buttonGroup3" value="ws" id="ws" onclick="filterElements()"><label for="ws">
-            World Star
-        </label>
-
-        <input type="radio" name="buttonGroup3" value="wod" id="wod" onclick="filterElements()"><label for="wod">
-            Wheel of Destiny
-        </label>
-
-        <input type="radio" name="buttonGroup3" value="roo" id="roo" onclick="filterElements()"><label for="roo">
-            Rite of Oblivion
-        </label>
-
-        <input type="radio" name="buttonGroup3" value="p1" id="p1" onclick="filterElements()"><label for="p1">
-            Part 1 Valk
-        </label>
-
-        
-
-        <!--         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('ws')"> World Star</button>
-        <button class="btn" onclick="filterSelection('wod')"> Wheel of Destiny</button>
-        <button class="btn" onclick="filterSelection('roo')"> Rite of Oblivion</button>
-        <button class="btn" onclick="filterSelection('p1')"> Part 1 Valk</button> -->
-
-    </div>
-    <div class="valklist" id="valkcards">
-
-        <div class="valkcard" data-category1="light" data-category2="mech" data-category3="roo">
-            <a href=""> <img src="valkportrait/Vestige of Myriad Celestia.png" alt=""> Lone Planetfarer</a> 
-        </div>
-
-        <div class="valkcard" data-category1="light" data-category2="qua" data-category3="ws">
-            <a href="/simp.html"> <img src="valkportrait/Theresa Schicksal's Imperative.png" alt=""> Schicksal's Imperative</a> 
-        </div>
-
-        <div class="valkcard" data-category1="phy" data-category2="sd" data-category3="wod">
-            <a href="#jd"> <img src="valkportrait/Songque Jovial Deception.png" alt=""> Jovial Deception: Shadowdimmer</a> 
-        </div>
-
-        <div class="valkcard" data-category1="fire" data-category2="psy" data-category3="wod">
-            <a href="#ld"> <img src="valkportrait/Lantern Lone Destruction.png" alt=""> Lone Destruction: Shadowchaser</a> 
-        </div>
-
-        <div class="valkcard" data-category1="ice" data-category2="mech" data-category3="wod">
-            <a href="#jd"> <img src="valkportrait/Thelema Mad Pleasure.png" alt=""> Mad Pleasure: Shadowbringer</a> 
-        </div>
-
-        <div class="valkcard" data-category1="light" data-category2="sd" data-category3="ws">
-            <a href="#dafl"> <img src="valkportrait/Senadina Deepspace Anchor.png" alt=""> Deepspace Anchor: First Light</a> 
-        </div>
-
-        <div class="valkcard" data-category1="fire" data-category2="psy" data-category3="roo">
-            <a href="#vbm"><img src="valkportrait/Coralie Valkyrie Blasthammer.png" alt="">Valkyrie Blastmetal</a> 
-        </div>
-
-        <div class="valkcard" data-category1="light" data-category2="mech" data-category3="ws">
-            <a href="#vbs"> <img src="valkportrait/Helia Valkyrie Boltstorm.png" alt=""> Valkyrie Boltstorm</a> 
-        </div>
-
-        <div class="valkcard" data-category1="fire" data-category2="bio" data-category3="p1" >
-            <a href="#simp"> <img src="valkportrait/Fu Hua Fenghuang of Vicissitude.png" alt=""> Fenghuang of Vicissitude</a> 
-        </div>
-
-        <div class="valkcard" data-category1="light" data-category2="psy" data-category3="p1" >
-            <a href="#simp"> <img src="valkportrait/Theresa Lunar Vow.png" alt=""> Lunar Vow: Crimson Love</a> 
-        </div>
-
-
-    </div>
-</div>
-    
-    
-    
-    
 
     <video autoplay muted loop id="myVideo">
         <source src="assets/bg.mp4" type="video/mp4">
       </video>
+
+      <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <img src="assets/emote.png">
+            </div>
+
+
+          <div class="footer-right">
+            <h2>SUPPORT ME</h2>
+
+            <div class="social-icons">
+              <a href="https://www.youtube.com/marisahonkai/join" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://ko-fi.com/marisahonkai" target="_blank"><i class="fas fa-mug-hot ko-fi"></i></a>
+              <a href="https://paypal.me/marisahonkai" target="_blank"><i class="fab fa-paypal"></i></a>
+
+
+            </div>
+            <P>Join Youtube membership, or donate</P>
+          </div>
+
+
+          <div class="footer-right">
+            <h2>SOCIAL</h2>
+            <div class="social-icons">
+              <a href="https://youtube.com/marisahonkai" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.hoyolab.com/accountCenter/postList?id=1021101" target="_blank">
+                <img src="assets/image2vector.svg" alt="Hoyolab Icon" class="hoyolab-icon">
+              </a>
+              <a href="https://discord.gg/marisahonkai" target="_blank"><i class="fab fa-discord"></i></a>
+              <a href="https://twitter.com/marisahonkai" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/morisohonkai/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <P>For the latest HI3 news, guides and memes</P>
+
+          </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                This website is not associated with miHoYo/Hoyoverse. Honkai Impact 3rd
+                game content and materials are trademarks and copyrights of miHoYo/Hoyoverse.
+              </p>
+        </div>
+      </footer>
     
 </body>
 

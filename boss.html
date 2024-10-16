@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bosscss.css">   
+    <link rel="stylesheet" href="style.css">
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="charts.min.css">
+    <script type = "text/javascript" src="java.js"></script>
+    <script type = "text/javascript" src="tabfunction.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <title>Honkai Impact Compendium</title>
+    
+</head>
+<body>
+
+    <div class="topnav-container">
+        <div class="topnav">
+            <li><a class="active" href="index.html"><img src="assets/logo.png"></a></li>
+            <div class="nav-links" id="navLinks">
+                <a href="charselect.html">Valkyrie</a>
+                <a href="charer.html">Elysian Realm</a>
+                <a href="calendar.html">Timeline</a>
+                <a href="boss.html">Abyss</a>
+                <a href="betanews.html">Beta Updates</a>
+            </div>
+            <a href="javascript:void(0);" class="navicon" onclick="toggleNav()">
+                &#9776;
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Weather Section -->
+        <div id="weather-section">
+            <h2>Weather</h2>
+            <form id="weather-form">
+                <div class="weather-list">
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="lightning" onchange="showBosses('lightning')" checked="checked"> Lightning
+                    </label>
+
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="fire" onchange="showBosses('fire')" checked="checked"> Fire
+                    </label>
+
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="typecounter" onchange="showBosses('typecounter')"> Type Counter
+                    </label>
+
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="img" onchange="showBosses('img')"> Imaginary
+                    </label>
+
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="sd" onchange="showBosses('sd')"> Stardust
+                    </label>
+                    
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="oblivion" onchange="showBosses('oblivion')"> Oblivion
+                    </label>
+
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="stellar" onchange="showBosses('stellar')"> Stellar
+                    </label>
+
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="starless" onchange="showBosses('starless')"> Starless
+                    </label>
+
+
+                    
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="ranged" onchange="showBosses('ranged')"> Ranged
+                    </label>
+
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="bloodthirsty" onchange="showBosses('bloodthirsty')"> Bloodthirsty
+                    </label>
+
+                    <label class="radio-btn">
+                        <input type="radio" name="weather" value="stun" onchange="showBosses('stun')"> Stun
+                    </label>
+
+
+
+                </div>
+            </form>
+        </div>
+
+        <!-- Boss Section -->
+        <div id="boss-section" class="hidden">
+            <h2>Bosses</h2>
+            <form id="boss-form">
+                <div id="boss-list" class="boss-list"></div>
+            </form>
+        </div>
+
+<!-- Boss Details -->
+<div id="boss-info" class="hidden">
+    <div class="boss-content">
+        <!-- Boss Image to the left -->
+        <div class="boss-image-container">
+            <img id="boss-image" src="" alt="Boss Image">
+        </div>
+
+        <!-- Boss Icon, Name, and Details to the right -->
+        <div class="boss-info-content">
+            <div class="boss-header">
+                <img id="boss-icon" src="" alt="Boss Icon">
+                <h2 id="boss-name">Boss Name</h2>
+            </div>
+            
+            <div class="boss-details">
+                <div class="boss-grid">
+                    <div class="bossgridlabel">Weather</div>
+                    <div class="bossgriddescription" id="weather-type">Weather Description</div>
+            
+                    <div class="bossgridlabel">Special Mechanics</div>
+                    <div class="bossgriddescription" id="mechanics">Special Mechanics Description</div>
+            
+                    <div class="bossgridlabel">Resistance</div>
+                    <div class="bossgriddescription" id="weakness">Weakness Description</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Team Info -->
+<div id="team-info">
+    <h3>Top Teams</h3>
+
+    <!-- Placeholder for the text below the "Top Teams" heading -->
+    <div id="team-info-text"></div>
+    <table id="team-table">
+        <thead>
+            <tr>
+                <th>Lineup</th>
+                <th>Rank / Percentage</th>
+            </tr>
+        </thead>
+        <tbody id="team-list"></tbody>
+    </table>
+    <div id="team-info2">'Rank' represents the highest ranks achieved by the lineup (most of the time composed entirely of SSS characters), while 'Percentage' indicates the lineup's appearance rate within Top 100.</div>
+
+</div>
+
+
+<!-- Video Examples Section -->
+<div id="video-section">
+    <h3>Gameplay Vids</h3>
+    <!-- Video list where dynamically created video items will be added -->
+    <div class="video-list" id="video-list"></div>
+</div>
+            
+        </div>
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/bg.mp4" type="video/mp4">
+      </video>
+
+      <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <img src="assets/senapoint.png">
+            </div>
+
+
+          <div class="footer-right">
+            <h2>SUPPORT ME</h2>
+
+            <div class="social-icons">
+              <a href="https://www.youtube.com/marisahonkai/join" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://ko-fi.com/marisahonkai" target="_blank"><i class="fas fa-mug-hot ko-fi"></i></a>
+              <a href="https://paypal.me/marisahonkai" target="_blank"><i class="fab fa-paypal"></i></a>
+
+
+            </div>
+            <P>Join Youtube membership, or donate</P>
+          </div>
+
+
+          <div class="footer-right">
+            <h2>SOCIAL</h2>
+            <div class="social-icons">
+              <a href="https://youtube.com/marisahonkai" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.hoyolab.com/accountCenter/postList?id=1021101" target="_blank">
+                <img src="assets/image2vector.svg" alt="Hoyolab Icon" class="hoyolab-icon">
+              </a>
+              <a href="https://discord.gg/marisahonkai" target="_blank"><i class="fab fa-discord"></i></a>
+              <a href="https://twitter.com/marisahonkai" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/morisohonkai/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <P>For the latest HI3 news, guides and memes</P>
+
+          </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                This website is not associated with miHoYo/Hoyoverse. Honkai Impact 3rd
+                game content and materials are trademarks and copyrights of miHoYo/Hoyoverse.
+              </p>
+        </div>
+      </footer>
+
+      <script>
+        window.onload = function() {
+            // Get the elements
+            const navbar = document.querySelector('.second-navbar');
+            const leftBtn = document.querySelector('.left-btn');
+            const rightBtn = document.querySelector('.right-btn');
+    
+            // Scroll left
+            leftBtn.addEventListener('click', () => {
+                navbar.scrollBy({
+                    left: -200, // Adjust the scroll distance
+                    behavior: 'smooth'
+                });
+            });
+    
+            // Scroll right
+            rightBtn.addEventListener('click', () => {
+                navbar.scrollBy({
+                    left: 200, // Adjust the scroll distance
+                    behavior: 'smooth'
+                });
+            });
+        };
+    </script>
+    
+    <script src="bossscript.js"></script>
+
+    
+</body>
+</html>

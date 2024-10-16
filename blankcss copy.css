@@ -1,0 +1,417 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #34495e;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.weather-list, .boss-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.radio-btn {
+    display: flex;
+    align-items: center; /* Align radio button and text vertically */
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.radio-btn input[type="radio"] {
+    margin: 0; /* Remove default margins */
+    vertical-align: middle; /* Aligns radio button with the text */
+}
+
+.radio-btn:hover {
+    background-color: #2980b9;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #2980b9;
+}
+.hidden {
+    display: none;
+}
+
+
+
+#boss-name {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.boss-details h2 {
+    margin: 0;
+    font-size: 1.5em;
+    display: inline;
+}
+
+/* Container for the entire boss info (image + icon/name/details) */
+.boss-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Boss image styling */
+.boss-image-container {
+    margin-right: 20px; /* Space between image and boss info */
+}
+
+#boss-image {
+    width: 256px;
+    height: 100px;
+    object-fit: cover; /* Maintain aspect ratio and fit image within the specified size */
+}
+
+/* Boss info content (icon, name, details) to the right of the image */
+.boss-info-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Align icon and boss name horizontally */
+.boss-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boss-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px; /* Space between icon and name */
+}
+
+#boss-name {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Boss details in a two-column grid */
+.boss-details {
+    margin-top: 10px;
+}
+
+.boss-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;  /* Two columns: one for labels, one for descriptions */
+    border: solid thin rgb(43, 43, 43);  /* Right border between label and description */
+    border-radius: 5px;
+
+}
+
+.bossgridlabel {
+    display: flex;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    background-color: #34495e; /* Darker background for labels */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bossgriddescription {
+    display: flex;
+    color: white;
+    padding: 10px;
+    border-left: solid thin rgb(43, 43, 43);  /* Right border between label and description */
+    line-height: 1.3em;
+    align-items: center;
+
+}
+
+/* Alternating row background colors for clarity */
+.boss-grid div:nth-child(4n+1), /* Label row */
+.boss-grid div:nth-child(4n+2) { /* Description row */
+    background-color: #2c3e50;
+}
+
+.boss-grid div:nth-child(4n+3),
+.boss-grid div:nth-child(4n+4) {
+    background-color: #34495e;
+}
+
+
+
+
+.video-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.video-item {
+    width: 45%;
+    height: 150px;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Weather and Boss List Uniform Width */
+.weather-list, .boss-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.weather-list input[type="radio"], .boss-list input[type="radio"] {
+    margin-right: 10px;
+}
+
+.weather-list label, .boss-list label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: left;
+}
+
+.weather-list label:hover, .boss-list label:hover {
+    background-color: #34495e;
+}
+
+@media (max-width: 768px) {
+    .weather-list, .boss-list {
+        grid-template-columns: repeat(2, 1fr);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .boss-content{
+        flex-direction: column;
+    }
+
+    .boss-header{
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .boss-image-container{
+        margin-right:0px;
+    }
+}
+
+
+/* Team Table Styling */
+#team-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    color: white;
+}
+
+#team-table th, #team-table td {
+    padding: 10px;
+    border-bottom: 1px solid #2c3e50;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#team-table td {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ensure even rows have consistent background */
+#team-table tr:nth-child(even) {
+    background-color: #303030a8;
+}
+  
+#team-table tr:nth-child(odd) {
+    background-color: #474a50ab;
+}
+
+/* Header style */
+#team-table th {
+    background-color: #2980b9;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Left column: Lineup of characters */
+#team-table td:first-child, #team-table th:first-child {
+    width: 80%; /* Ensure consistent width for the first column */
+}
+
+/* Right column: Rank/Percentage */
+#team-table td:last-child, #team-table th:last-child {
+    width: 20%; /* Ensure consistent width for the second column */
+}
+
+/* Team images */
+.team-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;          /* Allow images to wrap if they don't fit */
+    width: 100%;              /* Ensure images stretch fully across the container */
+}
+
+
+.team-images img {
+    width: 110px;             /* Default image size */
+    height: auto;
+    max-width: 100%;          /* Make sure images don't overflow */
+    object-fit: cover;        /* Maintain aspect ratio */
+    position:relative;
+}
+
+.teamimgrank {
+    position: absolute; /* Position relative to the container */
+    top: 7px; /* Aligns to the top */
+    right: -1px; /* Aligns to the left */
+    color:rgb(255, 255, 255);
+    background-color: rgb(158, 13, 177); 
+    font-size: 0.9em;
+    width:40%;
+    height: auto;
+    border-radius:3px;
+  }
+
+/* Optional note */
+.optional-note {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #e7e7e7;
+}
+
+/* Rows that span both columns */
+.top-row {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .team-images-wrapper {
+        gap: 5px;
+    }
+
+    .team-images img {
+        width: 20%;           /* Shrink images for smaller screens */
+        height: auto;          /* Maintain aspect ratio */
+    }
+
+    .optional-note {
+        font-size: 1.4vh;      /* Shrink note text for mobile */
+        margin-top: 3px;
+    }
+
+    #team-table th{
+        font-size: 1.4vh;
+        margin-right: 20px;
+        padding: 5px;
+    }
+
+    #team-table td{
+        font-size: 1.7vh;
+        padding: 5px;
+        padding-right: 10px;
+    }
+}
+
+.team-images-wrapper {
+    display: flex;
+    flex-direction: column;   /* Stack images and note vertically */
+    align-items: center;      /* Center images horizontally */
+    justify-content: center;
+    width: 100%;              /* Ensure it takes full width of the container */
+}
+
+/* Character image container */
+.img-container {
+    position: relative;  /* Establishes a positioning context for the rank overlay */
+    display: inline-block;  /* Ensures images are inline and wrapped correctly */
+    width: 110px;  /* Match the width of the character image */
+    height: 110px;  /* Match the height of the character image */
+}
+
+/* Character image */
+.team-images img.team-img {
+    width: 100%;  /* Ensure the image fully fills the container */
+    height: 100%;  /* Maintain full height within the container */
+    object-fit: cover;  /* Maintain aspect ratio while covering the area */
+    border-radius: 5px;  /* Optional: Add rounded corners */
+}
+
+/* Rank image overlay */
+.rank-overlay {
+    position: absolute; /* Position relative to the container */
+    top: -100px; /* Aligns to the top */
+    left: -100px; /* Aligns to the left */
+    height: 20px;
+    width: 20px;
+}
+
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two videos per row */
+    gap: 20px; /* Add spacing between video items */
+    margin-top: 20px;
+}
+
+.video-item {
+    display: flex;
+    flex-direction: column; /* Stack video and text vertically */
+    width: 100%;  /* Adjust container width to take full space */
+    background-color: #2c3e50;
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto; /* Remove fixed height so the container adapts to content */
+
+}
+
+.video-item iframe {
+    width: 100%; /* Ensure the video takes full width of the container */
+    height: 200px; /* Set video height */
+}
+
+.video-info {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.video-info p {
+    margin: 5px 0;
+}
+
+/* For smaller screens, stack videos one per row */
+@media (max-width: 768px) {
+    .video-list {
+        grid-template-columns: 1fr; /* One video per row on mobile */
+    }
+
+    .video-item iframe {
+        height: 180px; /* Slightly smaller height on mobile */
+    }
+}
+

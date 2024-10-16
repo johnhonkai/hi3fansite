@@ -1,166 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Theresa - Schicksal's Imperative Guide</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://i.imgur.com/FcP8XTF.png" />
+
+    <meta property="og:title" content="Honkai Impact 3rd Guide" />
+    <meta property="og:description" content="Page for Theresa - Schicksal's Imperative guide, builds, Elysian Realm run, and more" />
+    <meta property="og:url" content="https://marisaimpact.com/simp" />
+    <meta name="twitter:card" content="summary_large_image">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="ttable.css">
+
+    <link rel="stylesheet" href="charts.min.css">
     <script type = "text/javascript" src="java.js"></script>
     <script type = "text/javascript" src="tabfunction.js"></script>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-    <title>Honkai Impact Compendium</title>
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
 </head>
 <body>
 
 
-    <div class="topnav">
+    <div class="topnav-container">
+        <div class="topnav">
+            <li><a class="active" href="index.html"><img src="assets/logo.png"></a></li>
+            <div class="nav-links" id="navLinks">
+                <a href="charselect.html">Valkyrie</a>
+                <a href="charer.html">Elysian Realm</a>
+                <a href="calendar.html">Timeline</a>
+                <a href="boss.html">Abyss</a>
+                <a href="betanews.html">Beta Updates</a>
+            </div>
+            <a href="javascript:void(0);" class="navicon" onclick="toggleNav()">
+                &#9776;
+            </a>
+        </div>
+    </div>
+    <div class="second-navbar-container">
+         
+        <div class="second-navbar">
+            <a href="#overview">Overview</a>
+            <a href="#lineup">Lineup</a>
+            <a href="#equipment">Equipment</a>
+            <a href="#support">Support Buffs</a>
+            <a href="#er">Elysian Realm</a>
+            <a href="#rank-up">Rank Up</a>
+        </div>
         
-        <li><a class="active" href="home2.html"><img src="assets/logo.png"></a></li>
-        <a href="index.html">Valkyrie Guide</a>
-        <a href="#er">Elysian Realm</a>
-        <a href="calendar.html">Timeline</a>
-        <a href="betanews.html">Beta Patch Notes</a>      
-
     </div>
 
-    <div class="flexvalk">
+    <div class="topvalkinfo">
+        <img src="valkfull/teri_simp.png" alt="Theresa Avatar" class="topvalkavatar">
+      
+        <div class="topvalkdetails">
+            <h3>Schicksal's Imperative</h3>
+          <p>Theresa Apocalypse | Release Date: v7.7 (5 Sep 2024)</p>
+      
+          <div class="topvalkflexbox boxstat">
+            <img src="assets/Ranks/Valkyrie_S.png" alt="Rank">
+            <img src="assets/type/IconQUA.png" alt="Type Icon">
+            <img src="assets/element/Core_Lightning_DMG.png" alt="Element Icon">
+            <img src="assets/artype/ar world star.png" alt="AR Icon">
+          </div>
 
-        <div class="container2avatar">
-            <img src="valkfull/teri_simp.png"  alt="">
+
+      
+          <div class="flexvertical2 flexv2support">
+            <div>SUPPORT FOR</div>
+
+            <div class="topvalkflexbox boxsupport">    
+                <div><img src="assets/artype/ar world star.png" alt="Support Icon 1"></div>
+                <div><img src="assets/artype/ar wheel of destiny.png" alt="Support Icon 2"></div>
+                <div><img src="assets/artype/p1lightning.png" alt="Support Icon 3"></div>
+          </div>
+
+          </div>     
         </div>
+      </div>
 
-        <div class="container2">
-            <h3> Schicksal's Imperative</h3>
-            <h7>Theresa Apocalypse | Release Date: September 5, 2024 (v7.7)</h7>
-            
-            <div class="container2">
-            <div class="flexhorizontal" >
+      <a class="anchor" id="overview"></a>
 
-                <div class="container4">                    
-                    <img src="assets/type/IconQUA.png" alt="">                 
-                </div>
-
-                <div class="container3">
-                    <a>ASTRAL RING</a>             
-                    <img src="assets/artype/ar world star.png"  alt="">
-                </div>
-
-            </div>
-
-            <div class="flexhorizontal">
-
-                <div class="container4">
-                    <img src="assets/element/Core_Lightning_DMG.png" alt="">
-                </div>
-
-                <div class="container3">
-                    <a>SUPPORT FOR</a>
-                    <div class="flexhorizontal2" style="display: inline;">
-                        <img src="assets/artype/ar world star.png"  alt="">
-                        <img src="assets/artype/ar wheel of destiny.png"  alt="">
-                        <img src="assets/artype/AR Lunar Vow.png"  alt="">
-                        
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-            
-        </div>
-
-            
-    </div>
-    
     <div class="valkinfo">
-        <!-- <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
-            <rect
-              rx="0"
-              ry="0"
-              class="line"
-              height="100%"
-              width="100%"
-              stroke-linejoin="round"
-            />
-          </svg>  add example-5 to class name to get the animation-->
-        <h4>OVERVIEW</h4>
-        <li><b>
-            Qua DPS: </b> Has auto quantum collapse shield. Can consume teammates resonance marks during Stellar Outburst. <br/>
+        <div class="blue-bar">
+            <span class="blue-bar-text">OVERVIEW</span>
+        </div>
+        <h4>Roles</h4>
+
+
+        <li><b>DPS:</b> <br/>
+            - As a Quantum DPS, SIMP has multiple ways to apply quantum collapse.<br/>
+            - As a Resonance DPS, Homu's domain resonance marks can be triggered 18 times. SIMP can also consumes teammate's marks. <br/>
+            - As a Part 1 DPS, SIMP can create a double dps team SIMP x Lunar Vow. It has been used against Paralyze Sushang and Starless Benares. <br/>
         </li>
 
-        <li><b>World Star - WoDestiny Support:</b> Just another buffer and resonance triggerer, nothing special besides huge paralyze trauma and auto quantum collapse. <br/>
+        <li><b>World Star Support:</b> Mark triggerer + good buffs + has timestop. Currently in 7.8, we only have Sena as resonance dps, and there is not enough bosses
+            to evaluate SIMP's effectiveness vs the new supports Vita and HoFi. <br/>
         </li>
-        <li><b>Lunar Vow Support:</b> Gives Elemental Breach (replaces HoTr), huge paralyze trauma (replaces Eden, or can use them both) and faster rotation (just ult and sleep).
+
+        <li><b>WoDestiny Support:</b> Good support, can just ult and stay in the back like Senadina. However, SIMP does not offer any improvement on existing WoDestiny teams. <br/>
+        </li>
+
+
+        <li><b>Lunar Vow Support:</b> Gives Elemental Breach (replaces HoTr), huge paralyze trauma (replaces Eden) and faster rotation (just ult and sleep).
+        </li>
+
+        <li><b>Part 1 Lightning Support:</b> SIMP provides Total DMG buffs, Paralyze trauma and sp regen.
+        </li>
+
+        <li><b>Other Support:</b> Technically, since SIMP provides Total DMG, you can use her to support other elements that require Paralyze trauma or quantum collapse.
         </li>
 
         <div></div>
 
         <div class="breakline"></div>
         
-        <h4>PULL RECOMMENDATION</h4>
-        <li><b>
-            F2P Players:</b>  Not recommended because v7.8 is a CN anniversary patch with big spending event. <br/>
+        <h4>Pull Recommendation</h4>
+        <li><b>F2P Players:</b>  Not highly recommended.
         </li>
-        <li><b>Competitive:</b>  SIMP topscores the new qua boss Varaha, and a big upgrade to Lunar Vow.
-        </li>
-
-        <div class="breakline"></div>
-
-        <h4>HOW TO GET</h4>
-        <li><b>
-            Teri and Chainblade:</b>   Supply <br/>
-        </li>
-        <li><b>Stigma: </b>  Supply, Forgeable, Free stigma box in 7.7
+        <li><b>Competitive:</b>  SIMP topscores quite a number of bosses qua boss Valrahal, resonance Opaque Shadow, Paralyze Sushang, and Starless Benares. SIMP is also a big upgrade to Lunar Vow.
+            
         </li>
 
         <div class="breakline"></div>
 
-        <h4>FULL GUIDE</h4>
-        Check out the full guide on Hoyolab or Youtube
+        <h4>How to Get</h4>
+        <li><b>Teri and Chainblade:</b>   Supply
+        </li>
+        <li><b>Stigma: </b>  Supply, Forgeable.
+        </li>
+
+        <div class="breakline"></div>
+
+        <h4>Full Guide</h4>
+        <div>Check out the full guide on Youtube</div>
 
         <div class="video-container">
-    
+
             <iframe width="560" height="315" src="https://www.youtube.com/embed/F71RFZGpWu8?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
         
     </div>
+         <a class="anchor" id="lineup"></a>
 
-    <div class="valkinfo">
-        <h4>LINEUP</h4>
-        <b>World Star DPS</b> 
-
-        <div class="lineup">
-            <div><img src="valkportrait/Theresa Schicksal's Imperative.png"  alt=""> </div>
-            <div><a>+</a></div>
-            <div>              <img src="valkportrait/Senadina Deepspace Anchor.png"  alt=""></div>
-            <div>             <img src="valkportrait/Thelema Mad Pleasure.png"  alt=""></div>
-            <div>              <img src="valkportrait/Helia Valkyrie Boltstorm.png"  alt=""></div>
-            <div>              <img src="valkportrait/Lantern Lone Destruction.png"  alt=""></div>
+    <div class="valkinfolineup">
+        <div class="blue-bar">
+            <span class="blue-bar-text">LINEUP</span>
         </div>
 
-        <details>
-            <li>The best team is Deepspace Anchor + Mad Pleasure, one of the reasons being Mad Pleasure's extended timestop.</li>
-            <li>Deepspace Anchor + Valkyrie Boltstorm is close damage-wise, just lacking timestop.</li>
-        </details>
-
-        <div class="breaklinecontainer">
-            <div class="breakline2"></div>
-            <div class="breaklinetop"></div>
-        </div>
-
-        <b>World Star Support</b> 
-
-        <div class="lineup">
+        <div class="teamcontainer">
             
-            <div><img src="valkportrait/Senadina Deepspace Anchor.png"  alt=""></div>
-            <div><a>+</a></div>            
-            <div><img src="valkportrait/Theresa Schicksal's Imperative.png"  alt=""> </div>
-            <div><a>+</a></div>      
-            <div><img src="valkportrait/Thelema Mad Pleasure.png"  alt=""></div>      
-            <div><img src="valkportrait/Helia Valkyrie Boltstorm.png"  alt=""></div>
+            <h2>Simp DPS - World Star Team</h2>
+        
+        <div class="characters">
+            <div>
+                <div class="character">
+                <img src="valkportrait/Theresa Schicksal's Imperative.png"  alt="SIMP" class="image1">
+                <img src="valkportrait/LEADER.png"  alt="" class="image2">
+                </div>
+            </div>
+
+            <div class="characterplus">
+                 <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+            </div>
+
+            <div class="character" id="lp"> 
+                <img src="valkportrait/Vita Lone Planetfarer.png"  alt="Vita" class="image1">
+                <div class="dmgtext p100">100%</div>
+
+            </div>
+
+            <div class="character" id="coralie"> 
+                <img src="valkportrait/Kiana Herrscher of Finality.png"  alt="Kiana" class="image1">
+                <div class="dmgtext p100">100%</div>
+
+            </div>
+
+            <div class="character" id="sena"> 
+                <img src="valkportrait/Senadina Deepspace Anchor.png"  alt="Sena" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Thelema Mad Pleasure.png"  alt="Thelema" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Helia Valkyrie Boltstorm.png"  alt="Helia" class="image1">
+                <div class="dmgtext">88%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Lantern Lone Destruction.png"  alt="Lantern" class="image1">
+                <div class="dmgtext">85%</div>
+            </div>
+
+
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+           </div>
+
+           <div class="character"> 
+            <img src="valkportrait/asop_songque.png"  alt="sq" class="image1">
+            <div class="dmgtext p100">100%</div>
+        </div>
+
+        <div class="character"> 
+            <img src="valkportrait/asop_sera.png"  alt="sera" class="image1">
+            <div class="dmgtext pred">93%</div>
+        </div>
+
+        <div class="character"> 
+            <img src="valkportrait/elf_kiana.png"  alt="elfkiana" class="image1">
+            <div class="dmgtext pred">93%</div>
+            <div class="dmgtext extratag pgrey">Slow</div>
+
+        </div>
+
+        <div class="character"> 
+            <img src="valkportrait/asop_ds.png"  alt="ds" class="image1">
+            <div class="dmgtext">88%</div>
+            <div class="dmgtext extratag pgrey">Slow</div>
+        </div>
+
+        </div>
+
+            <details class="details-btn">
+                <summary>DETAILS</summary>
+
+            <li>The best supports are Sena + Thelema, thanks to extended timestop and high support dmg contribution.</li>
+            <li>Sena + Helia is close damage-wise, just lacking timestop.</li>
+            <li>Sena and Helia generate resonance marks, which can be consumed by Homu to trigger 3 resonance dmg (for each consumed mark)</li>
+
+        </details>
+        </div>
+
+        <div class="teamcontainer">
+            
+            <h2>Simp x Luna DPS - Part 1 Team</h2>
+        
+        <div class="characters">
+            <div>
+                <div class="character">
+                <img src="valkportrait/Theresa Lunar Vow.png"  alt="SIMP" class="image1">
+                <img src="valkportrait/LEADER.png"  alt="" class="image2">
+                </div>
+            </div>
+
+            <div class="characterplus">
+                 <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Theresa Schicksal's Imperative.png"  alt="SIMP" class="image1">
+            </div>
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+           </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Eden Golden Diva.png"  alt="Eden" class="image1">
+            </div>
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+           </div>
+
+           <div id="sera" class="character astralop"> 
+            <img src="valkportrait/elf_kiana.png" alt="kiana  elf" class="image1">
+        </div>
+
+
+        </div>
+
+            <details class="details-btn">
+                <summary>DETAILS</summary>
+                <li>SIMP buffs Lunar Vow, Lunar Vow buffs SIMP. SIMP deals big dmg, Lunar Vow also deals big dmg.</li>
+                <li>This team has been used against Starless Benares and Paralyze Sushang in v7.7.</li>
+
+            
+
+        </details>
         </div>
 
         <div class="breaklinecontainer">
@@ -168,83 +299,471 @@
             <div class="breaklinetop"></div>
         </div>
 
-        <b>Wheel of Destiny Support</b> 
+        <div class="artypecontainer">
+            <h2>World Star Support</h2>
+        </div>
 
-        <div class="lineup">
+        <div class="teamcontainer">
+            <div class="team">
+                <h3>Deepspace Anchor DPS</h3>
+            </div>
+        <div class="characters">
+            
 
-            <div>
-                <div class="parent">
+                <div class="character">
+                <img src="valkportrait/Senadina Deepspace Anchor.png"  alt="" class="image1">
+                <img src="valkportrait/LEADER.png"  alt="" class="image2">
+                </div>
+
+                <div class="characterplus">
+                    <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+                </div>
+
+                <div class="character"> 
+                    <img src="valkportrait/Theresa Schicksal's Imperative.png"  alt="" class="image1">
+                    <div class="dmgtext pred">95%</div>
+                </div>
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+            </div>
+
+            <div class="character">
+                <img src="valkportrait/Vita Lone Planetfarer.png"  alt="Vita" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Thelema Mad Pleasure.png"  alt="" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Kiana Herrscher of Finality.png"  alt="hofi" class="image1">
+                <div class="dmgtext pred">95%</div>
+            </div>         
+
+            <div class="character"> 
+                <img src="valkportrait/Helia Valkyrie Boltstorm.png"  alt="" class="image1">
+                <div class="dmgtext pred">95%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Lantern Lone Destruction.png"  alt="" class="image1">
+                <div class="dmgtext pred">93%</div>
+            </div>
+            
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="plus" class="image1">
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/asop_songque.png"  alt="sq" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/asop_sera.png"  alt="sera" class="image1">
+                <div class="dmgtext pred">94%</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/elf_kiana.png"  alt="elfkiana" class="image1">
+                <div class="dmgtext pred">95%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+    
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/asop_ds.png"  alt="ds" class="image1">
+                <div class="dmgtext">88%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+            </div>
+        </div>
+
+        <details class="details-btn">
+            <summary>DETAILS</summary>
+            <li>In 7.8, Vita + Thelema is the best vs Oblivion Homu. As of writing this, there is no updated abyss data for SIMP support.</li>
+            <li>In 7.7, SIMP + Thelema is the best vs Bloodthirsty SD-Mech Swarm.</li>
+            <li>Sena has 10 resonance trigger limit. When Sena is the only resonance generator in the team, you can skip the last three trigger attacks.</li>
+            <li>In S0 team, Helia is still very good, just lacking time stop.</li>
+        </details>
+        </div>
+
+
+        <div class="breaklinecontainer">
+            <div class="breakline2"></div>
+            <div class="breaklinetop"></div>
+        </div>
+
+        <div class="artypecontainer">
+            <h2>Wheel of Destiny Support</h2>
+        </div>
+
+        <div class="teamcontainer">
+            <div class="team">
+                <h3>Jovial Deception DPS</h3>
+            </div>
+        <div class="characters">
+
+                <div class="character">
                 <img src="valkportrait/Songque Jovial Deception.png"  alt="" class="image1">
                 <img src="valkportrait/LEADER.png"  alt="" class="image2">
+                </div>
                 
+                <div class="characterplus">
+                    <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+                </div>
+
+
+
+            <div class="character"> 
+                <img src="valkportrait/Theresa Schicksal's Imperative.png"  alt="" class="image1">
+                <div class="dmgtext pred">92%</div>
             </div>
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
             </div>
 
+            <div class="character">
+                <img src="valkportrait/Vita Lone Planetfarer.png"  alt="Vita" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
 
-            <div><a>+</a></div>
-            <div><img src="valkportrait/Theresa Schicksal's Imperative.png"  alt=""> </div>
-            <div><a>+</a></div>
+            <div class="character"> 
+                <img src="valkportrait/Lantern Lone Destruction.png"  alt="" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
 
-            <div> <img src="valkportrait/Thelema Mad Pleasure.png"  alt=""></div>
-            <div><img src="valkportrait/Senadina Deepspace Anchor.png"  alt=""></div>
-            <div><img src="valkportrait/Lantern Lone Destruction.png"  alt=""></div>
-        </div>
+            <div class="character"> 
+                <img src="valkportrait/Thelema Mad Pleasure.png"  alt="" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
 
-        <div class="breaklinecontainer">
-            <div class="breakline2"></div>
-        </div>
+            <div class="character"> 
+                <img src="valkportrait/Senadina Deepspace Anchor.png"  alt="" class="image1">
+                <div class="dmgtext pred">94%</div>
+            </div>
 
-
-        <div class="lineup">
-
-            <div><img src="valkportrait/Lantern Lone Destruction.png"  alt=""></div>
-            <div><a>+</a></div>
-
-            <div><img src="valkportrait/Theresa Schicksal's Imperative.png"  alt=""> </div>
-            <div><a>+</a></div>
-
-            <div> <img src="valkportrait/Thelema Mad Pleasure.png"  alt=""></div>
-            <div><img src="valkportrait/Senadina Deepspace Anchor.png"  alt=""></div>
-            <div><img src="valkportrait/Songque Jovial Deception.png"  alt=""></div>
-        </div>
-
-        <div class="breaklinecontainer">
-            <div class="breakline2"></div>
-        </div>
-
-        <div class="lineup">
-            <div> <img src="valkportrait/Thelema Mad Pleasure.png"  alt=""></div>
-            <div><a>+</a></div>
-            <div><img src="valkportrait/Theresa Schicksal's Imperative.png"  alt=""> </div>
-            <div><a>+</a></div>
-            <div><img src="valkportrait/Senadina Deepspace Anchor.png"  alt=""></div>
-            <div><img src="valkportrait/Lantern Lone Destruction.png"  alt=""></div>
-            <div><img src="valkportrait/Songque Jovial Deception.png"  alt=""></div>
-        </div>
-
-        <div class="breaklinecontainer">
-            <div class="breakline2"></div>
-            <div class="breaklinetop"></div>
-        </div>
-
-        <b>Lunar Vow Support</b> 
-
-        <div class="lineup">
+            <div class="character"> 
+                <img src="valkportrait/Coralie Valkyrie Blastmetal.png"  alt="" class="image1">
+                <div class="dmgtext pyellow">80%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+    
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/Kiana Herrscher of Finality.png"  alt="" class="image1">
+                <div class="dmgtext pyellow">78%</div>
+            </div>
             
-            <div><img src="valkportrait/Theresa Lunar Vow.png"  alt=""></div>
-            
-            <div><a>+</a></div>
-            <div><img src="valkportrait/Theresa Schicksal's Imperative.png"  alt=""></div>
-            <div><a>+</a></div>
-            <div><img src="valkportrait/Griseo Cosmic Expression.png"  alt=""></div>
-            <div><img src="valkportrait/Eden Golden Diva.png"  alt=""></div>
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="plus" class="image1">
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/asop_sera.png"  alt="sq" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/asop_songque.png"  alt="sera" class="image1">
+                <div class="dmgtext pyellow">72%</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/elf_bunny.png"  alt="elfkiana" class="image1">
+                <div class="dmgtext">81%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/asop_ds.png"  alt="ds" class="image1">
+                <div class="dmgtext pyellow">76%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+            </div>
+
         </div>
-        
+
+        <details class="details-btn">
+            <summary>DETAILS</summary>
+
+            <li>At S-rank, Lantern > Sena > Vita. (Data based on SD Epernay)</li>
+            <li>At SS+ ranks, Vita > Lantern > Sena. (Data based on SD Epernay) </li>
+            <li>Thelema provides shieldbreak, freeze, evasion AR regen - which may be required against some bosses.</li>
+            <li>I'm keeping it short here. For more details on JD lineup, please go to her page.</li>
+        </details>
+    </div>
+
+    <div class="teamcontainer">
+        <div class="team">
+            <h3>Lone Destruction DPS</h3>
+        </div>
+        <div class="characters">
+
+            <div>
+                <div class="character">
+                <img src="valkportrait/Lantern Lone Destruction.png"  alt="" class="image1">
+                <img src="valkportrait/LEADER.png"  alt="" class="image2">
+                </div>
+            </div>            
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+            </div>
+            <div class="character"><img src="valkportrait/Theresa Schicksal's Imperative.png"  alt="simp"> 
+                <div class="dmgtext pred">96%</div>
+            </div>
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+            </div>
+
+            <div class="character">
+                <img src="valkportrait/Vita Lone Planetfarer.png"  alt="Vita" class="image1">
+                <div class="dmgtext p100">100%</div>            
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Thelema Mad Pleasure.png"  alt="" class="image1">
+                <div class="dmgtext p100">100%</div>            </div>
+            
+            <div class="character"> 
+                <img src="valkportrait/Senadina Deepspace Anchor.png"  alt="" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+            
+            <div class="character"> 
+                <img src="valkportrait/Songque Jovial Deception.png"  alt="" class="image1">
+                <div class="dmgtext pred">98%</div>
+            </div>
+            
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="plus" class="image1">
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/asop_sera.png"  alt="sq" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/asop_songque.png"  alt="sera" class="image1">
+                <div class="dmgtext pred">94%</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/elf_kiana.png"  alt="elfkiana" class="image1">
+                <div class="dmgtext pred">95%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/asop_ds.png"  alt="ds" class="image1">
+                <div class="dmgtext">89%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+            </div>
+
+        </div>
+
+        <details class="details-btn">
+            <summary>DETAILS</summary>
+
+            <li>At S-rank, Sena support scores higher than Vita. Although Vita provides more buff, the dmg increase is not big enough to beat the score with Sena's zero field time. (Data based on Type Counter Kasumi)</li>
+            <li>At higher ranks and weapon synergy, Sena and Vita scores are close. (Data based on Type Counter Kasumi)</li>
+            <li>Thelema's abilities make her an indispensable support for Lantern. Shieldbreak helps a lot against Kasumi. Evasion spam AR regen is used on multiple bosses: RPC, Tank, Mobius. 
+                Thelema herself also contributes damage.
+            </li>
+
+        </details>
+    </div>
+
+    <div class="teamcontainer">
+        <div class="team">
+            <h3>Mad Pleasure DPS</h3>
+        </div>
+        <div class="characters">
+            <div>
+                <div class="character">
+                <img src="valkportrait/Thelema Mad Pleasure.png"  alt="" class="image1">
+                <img src="valkportrait/LEADER.png"  alt="" class="image2 badge">
+                </div>
+            </div>   
+            
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+            </div>
+
+            <div class="character"><img src="valkportrait/Theresa Schicksal's Imperative.png"  alt=""> 
+                <div class="dmgtext pred">99%</div>
+            </div>
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+            </div>
+            
+            <div class="character">
+                <img src="valkportrait/Vita Lone Planetfarer.png"  alt="Vita" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Lantern Lone Destruction.png"  alt="" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Senadina Deepspace Anchor.png"  alt="" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Songque Jovial Deception.png"  alt="" class="image1">
+                <div class="dmgtext pred">98%</div>
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Coralie Valkyrie Blastmetal.png"  alt="" class="image1">
+                <div class="dmgtext pred">93%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+            </div>
+            
+            <div class="character"> 
+                <img src="valkportrait/Kiana Herrscher of Finality.png"  alt="" class="image1">
+                <div class="dmgtext pred">91%</div>
+            </div>
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="plus" class="image1">
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/asop_sera.png"  alt="sq" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/asop_songque.png"  alt="sera" class="image1">
+                <div class="dmgtext pred">94%</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/elf_ely.png"  alt="elfkiana" class="image1">
+                <div class="dmgtext pred">94%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+            </div>
+    
+            <div class="character"> 
+                <img src="valkportrait/asop_ds.png"  alt="ds" class="image1">
+                <div class="dmgtext">87%</div>
+                <div class="dmgtext extratag pgrey">Slow</div>
+            </div>
+
+        </div>
+
+        <details class="details-btn">
+            <summary>DETAILS</summary>
+
+            Currently, there is no live abyss data for Thelema DPS with Vita support. Vita's percentage is purely based on simple dmg test.
+
+        </details>
+    </div>
+    
+    <div class="breaklinecontainer">
+        <div class="breakline2"></div>
+        <div class="breaklinetop"></div>
+    </div>
+    <div class="artypecontainer">
+        <h2>Part 1 Support</h2>
+    </div>
+
+    <div class="teamcontainer">
+        <div class="team">
+            <h3>Lunar Vow DPS</h3>
+        </div>
+
+
+        <div class="characters">
+            
+            <div>
+                <div class="character">
+                <img src="valkportrait/Theresa Lunar Vow.png"  alt="" class="image1">
+                <img src="valkportrait/LEADER.png"  alt="" class="image2">
+                </div>
+            </div>  
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+           </div>
+
+            <div class="character"><img src="valkportrait/Theresa Schicksal's Imperative.png"  alt=""></div>
+            
+            <div class="characterplus">
+                 <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+            </div>
+
+            <div class="character"> 
+                <img src="valkportrait/Griseo Cosmic Expression.png"  alt="" class="image1">
+                <div class="dmgtext p100">100%</div>
+            </div>            
+            <div class="character"> 
+                <img src="valkportrait/Eden Golden Diva.png"  alt="" class="image1">
+                <div class="dmgtext">89%</div>
+            </div>   
+        </div>
+
+        <details class="details-btn">
+            <summary>DETAILS</summary>
+            Not to be confused with SIMP x LV double dps team. This team is more towards LV DPS (MECH enemy, or Bleed weather).
+        </details>
 
     </div>
+
+        <div class="teamcontainer">
+            <div class="team">
+                <h3>Other Lightning Teams</h3>
+            </div>
+
+        <div class="characters">
+            
+            <div>
+                <div class="character">
+                <img src="valkportrait/P1Lightning.png"  alt="" class="image1">
+
+                </div>
+            </div>            
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+           </div>
+
+             <div class="character"> 
+                <img src="valkportrait/Theresa Lunar Vow.png"  alt="" class="image1">
+            </div>   
+
+            <div class="character"> 
+                <img src="valkportrait/Bronya Herrscher of Truth.png"  alt="" class="image1">
+            </div>
+
+            <div class="characterplus">
+                <img src="valkportrait/Plus.png"  alt="Vita" class="image1">
+           </div>
+
+            <div class="character"><img src="valkportrait/Theresa Schicksal's Imperative.png"  alt=""></div>
+        </div>
+
+
+        </div>
+    </div>
         
+    <a class="anchor" id="equipment"></a>
+
     <div class="valkinfo">
-        <h4>EQUIPMENT</h4>
+        <div class="blue-bar">
+            <span class="blue-bar-text">EQUIPMENT</span>
+        </div>
+
 
         <div class="equipment">
             <div class="equiptest">
@@ -265,8 +784,14 @@
 
         
         <div class="equipbruh">
-            <b><span style="color: #ffe46b">BEST:</span> VACATION NOTICE + DAY BY DAY SET</b> <br/>
-            Signature equipment. Best for most situations, except for supporting Mad Pleasure and Lone Destruction.
+            <b><span style="color: #ffe46b">BEST:</span> Vacation Notice + Day After Day Set</b> <br/>
+            
+        </div>
+
+        <div class="equipdescription">
+            <li>Vacation Notice: Gives more Stress meter and more Paralyze trauma. Team gains a shield, upon being hit by a quantum collapse attack, apply quantum collapse.</li>
+            <li>Day After Day: Best for most situations / general purpose. There are better options for supporting Thelema / Lantern, and as Part 1 DPS. </li>
+
         </div>
 
         <div class="breaklinecontainer">
@@ -287,13 +812,42 @@
             <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/12/12/282941837/c9d2b6e080dbdf229d0723a82fb74a92_7687798446061500372.png?x-oss-process=image/quality,q_75/resize,s_120" alt="">
             </div>
         </div>
-        <div class="equipment">
+
 
             <div class="equipbruh">
-                <b> <span style="color: #ffe46b">SITUATIONAL:</span> BRONYA ZAYCHIK SET</b> <br/>
-                When supporting Mad Pleasure and Lone Destruction, Bronya Zaychik stigma gives overall more damage per rotation than Day By Day set. 
+                <b> <span style="color: #92e0ff">SITUATIONAL:</span> Bronya Zaychik set</b> <br/> 
           </div>
- 
+
+          <div class="equipdescription">
+            <li>When supporting Thelema or Lantern, Bronya Zaychik stigma provides around 5% more dmg per rotation than Day After Day set. </li>
+        </div>
+
+        <div class="breaklinecontainer">
+            <div class="breakline2"></div>
+        </div>
+
+        
+        <div class="equipment">
+
+            <div class="equiptest">
+            <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/c8422093e19d3fda4eb461012353030f_3878463693516940344.png?x-oss-process=image/quality,q_75/resize,s_120"  alt="">
+            </div>
+            
+            <div class="equiptest">
+            <img src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/04/18/50494840/2e0c1ce8f726d045657c61ee4eed8c08_5656353955789156078.png?x-oss-process=image/quality,q_75/resize,s_120"  alt="">
+            </div>
+            <div class="equiptest">
+                <img src="https://act-upload.mihoyo.com/bh3-wiki/2024/07/26/50494840/515b58404224d78c57a984ddf12273aa_9218979217839153648.png?x-oss-process=image/quality,q_75/resize,s_120" alt="">
+            </div>
+        </div>
+
+
+            <div class="equipbruh">
+                <b> <span style="color: #92e0ff">PART 1 DPS:</span> Zeno TM DayAfterDay B</b> <br/> 
+          </div>
+
+          <div class="equipdescription">
+            <li>When SIMP is a Part 1 DPS, Zeno TM provides 18% more dmg than Day After Day set.</li>
         </div>
 
         <div class="breaklinecontainer">
@@ -307,51 +861,72 @@
         </div>
 
         <div class="equipbruh">
-            <b>TRANSITIONAL :</b> Banquet Rose
+            <b><span style="color: #bbbbbb">TRANSITIONAL:</span> Banquet Rose</b>
         </div>
 
     </div>
 
+    <a class="anchor" id="support"></a>
 
-    
-    <div class="valkinfo" id="er">
+    <div class="valkinfolineup">
+        <div class="blue-bar">
+            <span class="blue-bar-text">SUPPORT BUFF</span>
+        </div>
+
+        <img src="valkbuff/buffs_simp.png"  alt="">
         
-        <h4>ELYSIAN REALM</h4>
+        <div>The stats shown above uses signature set. </div> 
+
+        
+        </div>
+    
+        <a class="anchor" id="er"></a>
+
+    <div class="valkinfoer">
+        
+        <div class="blue-bar">
+            <span class="blue-bar-text">ELYSIAN REALM</span>
+        </div>
 
         <div class="tab">
-            <button class="tablinks active" onclick="openTab(event, 'Default')">SLEEP AFK </button>
-            <button class="tablinks" onclick="openTab(event, 'Spin2Win')">SPIN TO WIN</button>
-            <button class="tablinks" onclick="openTab(event, 'ClockSmash')">ALARM CLOCK SMASH</button>
+            <button class="tablinks active" onclick="openTab(event, 'Default')">SLEEP </button>
+            <button class="tablinks" onclick="openTab(event, 'Spin2Win')">SPIN</button>
+            <button class="tablinks" onclick="openTab(event, 'ClockSmash')">SMASH</button>
         </div>
           
           <!-- Tab content -->
-          <div id="Default" class="tabcontent">
+        <div id="Default" class="tabcontent">
             
             <div class="flexego">
-                <h3>SLEEP AFK PLAYSTYLE</h3> 
-                <a>Just press Ult and let the Homus do their magic.</a>
+                <h3>Sleep AFK Playstyle</h3> 
+                <a>Just press Ult and let the Homus attack. Recommended for new players who are having trouble clearing ER.</a>
             </div> 
 
             <div class="justsettext">
                 
                 <div class="breaklinecontainer">
                     <div class="breakline2"></div>
-                    <div class="breaklinetop"></div>
+                </div>
+                <div class="ertext"><b>EGO SIGNETS</b>
                 </div>
 
-                    <b>SIGNETS</b>
                     <li>Start: Saturday + Sunday</li>
                     <li>Optional: Work's End</li> 
                     <li>This run is very slow. Get both Ego blessings at the start by using <span style="color: #6ce9ff">Thorny Crown</span> sigil or by resetting Floor 1 until you get another Ego portal.</li>
-                    <li>Recommended for new players who are having trouble clearing ER.</li>
 
-                    <br/>
-                
-                <div class="flexhorizontal3">
+                    <div class="breaklinecontainer">
+                        <div class="breakline2"></div>
+                    </div>
+                    <div class="ertext"><b>GENERAL SIGNETS</b> </div>
+
                     
+
+                <div class="flexhorizontal3">
+
                     <div class="flexvertical">
                         <img src="/assets/signets/Signets of Infinity (Mobius).png" height="70px" alt=""> 
-                        <a>2</a>
+                        <div class="starttext">START</div>
+                        <div>2</div>
                     </div>
 
                     
@@ -374,21 +949,24 @@
                         <img src="/assets/signets/Signets of Reverie (Pardofelis).png" height="70px" alt="">
                         <a>1</a>
                     </div>
-                        
-                </div>
+                    
 
-                <li>Infinity: In ER,  SIMP's homu puppets count as summoned entity.
+                </div>
+                Infinity: In ER,  SIMP's homu puppets count as summoned entity.
+
 
                     
                 </div>
 
+                
                 <div class="breaklinecontainer">
                     <div class="breakline2"></div>
-                    <div class="breaklinetop"></div>
                 </div>
 
-                <div>            
-                    <b>SUPPORT</b>   
+                <div class="ertext"><b>SUPPORT</b> </div>
+                  
+
+                <div class="ersupportcontainer">            
                     <div class="flexhorizontal3">
                         
                         <div class="flexvertical">
@@ -397,7 +975,7 @@
                                 <img src="valkportrait/Himeko Blood Rose.png" height="70px" alt="">
                             </div>
                             
-                            <a>START</a>
+                            <div>START</div>
                         </div> 
     
                         
@@ -407,7 +985,7 @@
                                 <img src="valkportrait/Himeko Blood Rose.png" height="70px" alt="">
                             </div>
                             
-                            <a>MID</a>
+                            <div>MID</div>
                         </div>   
                         
                         <div class="flexvertical">
@@ -416,15 +994,20 @@
                                 <img src="valkportrait/Himeko Blood Rose.png" height="70px" alt="">
                             </div>
                             
-                            <a>FLOOR 17</a>
+                            <div>FLOOR 17</div>
                         </div>
                     </div>   
-                    
-                   
-                    <b>SIGIL </b>   
+                    </div>
+                
+                    <div class="breaklinecontainer">
+                        <div class="breakline2"></div>
+                    </div>
+
+                    <div class="ertext"><b>SIGIL </b> </div>
+                    <div class="ersupportcontainer">          
                     <div class="flexhorizontal3">
                         
-                        <div class="flexvertical">
+                        <div class="flexvertical sigil">
                             <div class="flexhorizontal4">
                                 <img src="assets/sigils/Thorny_Crown.webp" height="70px" alt="">
                                 <img src="assets/sigils/Empty_like_Shala.webp" height="70px" alt="">
@@ -434,18 +1017,18 @@
                         </div> 
     
                         
-                        <div class="flexvertical">
+                        <div class="flexvertical sigil">
                             <div class="flexhorizontal4">
                                 <img src="assets/sigils/Forbidden_Seed.webp" height="70px" alt="">
-                                <img src="assets/sigils/The_First_Scale.webp" height="70px" alt="">
+                                <img src="assets/sigils/Boundless_Logos.webp" height="70px" alt="">
                             </div>
                             
                             <a>START (Normal)</a>
                         </div>   
 
-                        <div class="flexvertical">
+                        <div class="flexvertical sigil">
                             <div class="flexhorizontal4">
-                                <img src="assets/sigils/Tin_Flask.webp" height="70px" alt="">
+                                <img src="assets/sigils/The_First_Scale.webp" height="70px" alt="">
                                 <img src="assets/sigils/Dreamful_Gold.webp" height="70px" alt="">
                             </div>
                             
@@ -454,12 +1037,12 @@
                     </div>   
                     </div>
 
-                    <div class="breaklinecontainer">
-                        <div class="breakline2"></div>
-                        <div class="breaklinetop"></div>
-                    </div>
+                
+                <div class="breaklinecontainer">
+                    <div class="breakline2"></div>
+                </div>
 
-                    <b>HOW TO PLAY</b>
+                <div class="ertext"><b>HOW TO PLAY</b></div>
                     <li>Use ult.</li> 
                     <li>Watch Youtube Shorts until the stage is cleared.</li> 
                     <li>NOTE: In the context of v7.7, ER has a stage effect that casts a lightning strike at the start of battle that gives you 30% Total DMG buff. On some stages, you might sleep outside the lightning strike radius.</li>
@@ -468,38 +1051,45 @@
                         <p>Check out this showcase from Marisa Honkai:</p>
                         <div class="video-container">
     
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/MWD316kj2rI?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5hFelCi3bgs?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                         </div>
                 </div>
 
-                </div>
+        </div>
            
-                <div id="Spin2Win" class="tabcontent">
+        <div id="Spin2Win" class="tabcontent">
             
                 <div class="flexego">
-                    <h3>SPIN TO WIN PLAYSTYLE</h3> 
-                    Why afk when you can clear each floor in five seconds?
+                    <h3>Spin2Win Playstyle</h3> 
+                    <li>This is a speedrun build where SIMP nukes enemies with resonance damage. If you don't finish the fight within the first meter, continue the fight with normal playstyle.</li> 
+                    <li>Recommended for players with high Dorm stat and Divine Key stat. New players can try if the current stage effect and enemies are beneficial for SIMP.</li>
+
                 </div> 
     
                 <div class="justsettext">
+                    
+
                     <div class="breaklinecontainer">
                         <div class="breakline2"></div>
-                        <div class="breaklinetop"></div>
                     </div>
-                        <b>SIGNETS</b>
+
+                    <div class="ertext"><b>EGO SIGNETS</b></div>
                         <li>Start: Day Off Work</li>
                         <li>Optional: Work's End</li> 
-                        <li>Do Not Get: Annual Leave</li> 
-                        <li>This is a speedrun build where SIMP nukes enemies with resonance damage. If you don't finish the fight within the first meter, you will have to revert to normal playstyle, where you deal significantly less damage for the rest of the stage.</li> 
-                        <li>Recommended for players with high Dorm stat and Divine Key stat. New players can try, but not recommended.</li>
+                        <li>Do Not Get: Annual Leave. If you get this, your spin will no longer trigger resonance marks.</li> 
+
+                        <div class="breaklinecontainer">
+                            <div class="breakline2"></div>
+                        </div>
     
-                        <br/>
-                    
+                        <div class="ertext"><b>GENERAL SIGNETS</b></div>
                     <div class="flexhorizontal3">
                         
                         <div class="flexvertical">
                             <img src="assets/signets/Signets of Decimation (Kalpas).png" height="70px" alt="">
+                            <div class="starttext">START</div>
+
                             <a>1</a>
                         </div>
     
@@ -523,24 +1113,25 @@
                             <img src="assets/signets/Signets of Reverie (Pardofelis).png" height="70px" alt="">
                             <a>1</a>
                         </div>
-                            
+
                     </div>
-    
-                    <li>Infinity: In ER,  SIMP's homu puppets count as summoned entity.
+                    Infinity: In ER,  SIMP's homu puppets count as summoned entity.
+
     
                         
                     </div>
     
                     <div class="breaklinecontainer">
                         <div class="breakline2"></div>
-                        <div class="breaklinetop"></div>
                     </div>
+
     
                     <div>            
-                        <b>SUPPORT</b>   
+                        <div class="ertext"><b>SUPPORT</b></div>
+
                         <div class="flexhorizontal3">
                             
-                            <div class="flexvertical">
+                            <div class="flexvertical ">
                                 <div class="flexhorizontal4">
                                     <img src="valkportrait/Senadina Deepspace Anchor.png" height="70px" alt="">
                                     <img src="valkportrait/Himeko Blood Rose.png" height="70px" alt="">
@@ -568,12 +1159,15 @@
                                 <a>FLOOR 17</a>
                             </div>
                         </div>   
-                        
-                       
-                        <b>SIGIL </b>   
+
+                        <div class="breaklinecontainer">
+                            <div class="breakline2"></div>
+                        </div>
+                        <div class="ertext"><b>SIGIL</b></div>
+
                         <div class="flexhorizontal3">
                             
-                            <div class="flexvertical">
+                            <div class="flexvertical sigil">
                                 <div class="flexhorizontal4">
                                     <img src="assets/sigils/An_Old_Pals_Legacy.webp" height="70px" alt="">
                                     <img src="assets/sigils/Mad_Kings_Mask.webp" height="70px" alt="">
@@ -584,7 +1178,7 @@
         
  
     
-                            <div class="flexvertical">
+                            <div class="flexvertical sigil">
                                 <div class="flexhorizontal4">
                                     <img src="assets/sigils/Tin_Flask.webp" height="70px" alt="">
                                     <img src="assets/sigils/Dreamful_Gold.webp" height="70px" alt="">
@@ -597,49 +1191,54 @@
     
                         <div class="breaklinecontainer">
                             <div class="breakline2"></div>
-                            <div class="breaklinetop"></div>
                         </div>
-
-                        <b>HOW TO PLAY</b>
+                        <div class="ertext"><b>HOW TO PLAY</b></div>
                         <li>Activate Stellar Outburst.</li> 
-                        <li>Keep pressing Basic ATK to keep spinning until you run out of meter. Also use Ult when available.</li>
+                        <li>Mash Basic ATK to keep spinning until you run out of meter. Also use Ult when available.</li>
                         <li>If enemies are still alive after the first meter spin, you have to revert to normal SIMP gameplay.</li>
 
                         <div class="flexvertical2">
                             <p>Check out this showcase from Marisa Honkai:</p>
                             <div class="video-container">
         
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MWD316kj2rI?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_zf0XX1qjeo?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
                             </div>
                     </div>
     
-                    </div> 
+        </div> 
                   
                   
-                    <div id="ClockSmash" class="tabcontent">
+        <div id="ClockSmash" class="tabcontent">
             
                         <div class="flexego">
-                            <h3>ALARM CLOCK SMASH</h3> 
+                            <h3>Alarm Clock Smash</h3> 
                             Normal Stellar Outburst Playstyle
                         </div> 
             
                         <div class="justsettext">
                             <div class="breaklinecontainer">
                                 <div class="breakline2"></div>
-                                <div class="breaklinetop"></div>
                             </div>
-                                <b>SIGNETS</b>
+        
+                            <div class="ertext"><b>EGO SIGNETS</b></div>
                                 <li>Start: Annual Leave + Day Off Work</li>
                                 <li>Optional: Work's End</li> 
                                 <li>Damage is underwhelming - I recommend getting both Ego blessings at the start by using <span style="color: #6ce9ff">Thorny Crown</span> sigil, or by resetting Floor 1 until you get another Ego portal, or by using <span style="color: #6ce9ff">Because of You</span> sigil.</li>
 
-                                <br/>
-                            
+                                <div class="justsettext">
+                                    <div class="breaklinecontainer">
+                                        <div class="breakline2"></div>
+                                    </div>   
+                                </div>
+
+                                <div class="ertext"><b>GENERAL SIGNETS</b></div>
+
                             <div class="flexhorizontal3">
                                 
                                 <div class="flexvertical">
                                     <img src="assets/signets/Signets of Gold (Eden).png" height="70px" alt="">
+                                    <div class="starttext">START</div>
                                     <a>1</a>
                                 </div>
             
@@ -663,21 +1262,21 @@
                                     <img src="assets/signets/Signets of Reverie (Pardofelis).png" height="70px" alt="">
                                     <a>1</a>
                                 </div>
-                                    
+
                             </div>
             
-                            <li>Infinity: In ER,  SIMP's homu puppets count as summoned entity.
-            
+                            Infinity: In ER,  SIMP's homu puppets count as summoned entity.
+
                                 
                             </div>
             
                             <div class="breaklinecontainer">
                                 <div class="breakline2"></div>
-                                <div class="breaklinetop"></div>
                             </div>
             
-                            <div>            
-                                <b>SUPPORT</b>   
+                            <div>   
+                                <div class="ertext"><b>SUPPORT</b></div>
+         
                                 <div class="flexhorizontal3">
                                     
                                     <div class="flexvertical">
@@ -709,10 +1308,12 @@
                                     </div>
                                 </div>   
                                 
-                               
-                                <b>SIGIL </b>   
+                                <div class="breaklinecontainer">
+                                    <div class="breakline2"></div>
+                                </div>
+                                <div class="ertext"><b>SIGIL</b></div>
                                 <div class="flexhorizontal3">
-                                    <div class="flexvertical">
+                                    <div class="flexvertical sigil">
                                         <div class="flexhorizontal4">
                                             <img src="assets/sigils/Thorny_Crown.webp"  height="70px" alt="">
                                             <img src="assets/sigils/Dreamful_Gold.webp" height="70px" alt="">
@@ -720,7 +1321,17 @@
                                         
                                         <a>START (Less Effort)</a>
                                     </div> 
-                                    <div class="flexvertical">
+
+                                    <div class="flexvertical sigil">
+                                        <div class="flexhorizontal4">
+                                            <img src="assets/sigils/Gold_Goblet.webp"  height="70px" alt="">
+                                            <img src="assets/sigils/Because_of_You.webp" height="70px" alt="">
+                                        </div>
+                                        
+                                        <a>START (Ego on F7)</a>
+                                    </div> 
+
+                                    <div class="flexvertical sigil">
                                         <div class="flexhorizontal4">
                                             <img src="assets/sigils/Gold_Goblet.webp" height="70px" alt="">
                                             <img src="assets/sigils/Dreamful_Gold.webp" height="70px" alt="">
@@ -731,9 +1342,9 @@
                 
          
             
-                                    <div class="flexvertical">
+                                    <div class="flexvertical sigil">
                                         <div class="flexhorizontal4">
-                                            <img src="assets/sigils/Tin_Flask.webp" height="70px" alt="">
+                                            <img src="assets/sigils/Ruined_Legacy.webp" height="70px" alt="">
                                             <img src="assets/sigils/Dreamful_Gold.webp" height="70px" alt="">
                                         </div>
                                         
@@ -744,10 +1355,8 @@
             
                                 <div class="breaklinecontainer">
                                     <div class="breakline2"></div>
-                                    <div class="breaklinetop"></div>
                                 </div>
-
-                                <b>HOW TO PLAY</b>
+                                <div class="ertext"><b>HOW TO PLAY</b></div>
                                 <li>Activate Stellar Outburst. When you have enough meter, use Combo ATK.</li> 
                                 <li>Press Basic ATK to spin and gain meter.</li>
                                 <li>Weapon skill recover half meter.</li>
@@ -757,12 +1366,12 @@
                                     <p>Check out this showcase from Marisa Honkai:</p>
                                     <div class="video-container">
                 
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MWD316kj2rI?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3X0S1iit3lw?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
                                     </div>
                             </div>
             
-                            </div>    
+        </div>    
                 
         </div>
           
@@ -770,12 +1379,46 @@
           
 
 
+        <a class="anchor" id="rank-up"></a>
+
+    <div class="valkinfotable desktop">
+        <div class="blue-bar">
+            <span class="blue-bar-text">RANK UP</span>
+        </div>
+        <div class="reminder">Reminder: S0 rank is enough for most players. A fully built S0-rank team is better than SSS-rank DPS without proper supports.</div>
+        
+        <div class="ertext"><b>NOTABLE RANK UP</b></div>
+
+        <div class="rankupcontainer">
+
+            <div class="rankuppart partcyan">
+                <div class="rankuptitle titlecyan">
+                    DPS Upgrade
+                </div>
+                <div>S1: Increase Resonance DMG</div>
+                <div>S2: Weapon skill trigger time fracture</div>
+                <div>SS2: Elemental Breach +4.5 > 6%</div>
+                <div>All ranks have DPS upgrades.</div>
+            </div>
+
+            <div class="rankuppart partyellow">
+                <div class="rankuptitle">
+                    Support Upgrade
+                </div>
+                <div>S2: Part 1 Team</div>
+                <li>Total DMG +34% > 40%</li>
+                <li>Elemental Breach +14% > 17%</li>
+            </div>
+
+        </div>
+
+    
+
+    <div class="breaklinecontainer">
+        <div class="breakline2"></div>
     </div>
 
-    <div class="valkinfo">
-        <h4>Rank Up</h4>
-        <blockquote> Reminder for new players: S0-rank is enough. A fully built S-rank team >>> SSS valk but no built supports.</blockquote>
-
+    <div class="ertext"><b>FULL RANK UP LIST</b></div>
         <table>
       <thead>
         <tr>
@@ -788,7 +1431,7 @@
         <tr>
           <td>S1</td>
           <td>
-            Homu consume teammate's resonance mark to trigger resonance 3 times, each deal 108%  > 120% ATK of Lightning DMG. If the max number of times resonance mark can be triggered is over 7 times, then each mark deal 620%  > 650%  ATK of Lightning DMG.
+            When SIMP is the leader, Homu consumes teammate's resonance mark to trigger resonance 3 times, each deal 108%  > 120% ATK of Lightning DMG. If the max number of times resonance mark can be triggered is over 7 times, then each mark deal 620%  > 650%  ATK of Lightning DMG.
             
             </td>
           <td>DPS</td>
@@ -797,9 +1440,9 @@
            <tr>
           <td>S2</td>
           <td>
-            <li>When AR World Star is active, during Stellar Outburst, Substitution Mark will launch an additional pinball.</li>
+            <li>When AR World Star is active, during Stellar Outburst, Substitute Mark will launch an additional pinball.</li>
             <li>When AR is not activated: After casting finisher, teammate gain Total DMG +34% > 40% . If the teammate is a Theresa character, the effect is changed to Elemental Breach state, EleBreach +14% > 17% for 18s.</li>
-            <li>In [I Wanna Leave Work!] state, casting weapon skill triggers evasion skill.</li>
+            <li>In [Let Me Leave Work!] state, casting weapon skill triggers evasion skill.</li>
         </td>
           <td>
             <b>Recommended!</b> <br/>
@@ -811,21 +1454,21 @@
           <td>S3</td>
           <td>
             Leader Skill:
-            <li>Team Elemental DMG +17.2%  > 21.1% </li>
-            <li>SIMP's resonance atk gain Lightning DMG +21% > 25.5% </li>
-            <li>Enemies take 17.5% > 21.25%  more Lightning DMG from SIMP's resonance skill (independent multiplier)</li>
+            <li>- Team Elemental DMG +17.2%  > 21.1% </li>
+            <li>- SIMP's resonance atk gain Lightning DMG +21% > 25.5% </li>
+            <li>- Enemies take 17.5% > 21.25%  more Lightning DMG from SIMP's resonance skill (independent multiplier)</li>
 
           </td>
           <td>
-            DPS <br/> Resonance Support <br/> Shadow Support
+            DPS
           </td>
 
         </tr>
            <tr>
           <td>SS</td>
           <td>
-            <li>When Substitution Mark exists, self Total DMG +15.8% > 20% </li>
-            <li>UNLOCK: In [I Wanna Leave Work!] state, in time fracture, Basic ATK seq 2 hits gain Lightning DMG +32%, increase by 8% more when you have Quantum Mech energy</li>
+            <li>When Substitute Mark exists, self Total DMG +15.8% > 20% </li>
+            <li>UNLOCK: In [Let Me Leave Work!] state, Basic ATK seq 2 hits gain Lightning DMG +32%, increase by 8% more when you have Quantum Mech energy</li>
           </td>
           <td>DPS</td>
 
@@ -849,11 +1492,11 @@
     <td>SS3</td>
     <td>
         Leader Skill:
-        <li>Team Elemental DMG +21.1% > 25%  </li>
-        <li>SIMP's resonance atk gain Lightning DMG +25.5% > 30% </li>
-        <li>Enemies take 21.25%> 25% more Lightning DMG from SIMP's resonance skill (independent multiplier)</li>
+        <li>- Team Elemental DMG +21.1% > 25%  </li>
+        <li>- SIMP's resonance atk gain Lightning DMG +25.5% > 30% </li>
+        <li>- Enemies take 21.25%> 25% more Lightning DMG from SIMP's resonance skill (independent multiplier)</li>
 </td>
-    <td>DPS <br/> Resonance Support <br/> Shadow Support</td>
+    <td>DPS</td>
  
   </tr>
   <tr>
@@ -872,10 +1515,131 @@
 
     </div>
 
-    
+
+    <div class="valkinfotable mobile">
+        <div class="blue-bar">
+            <span class="blue-bar-text">RANK UP</span>
+        </div>  
+
+        <div class="reminder">Reminder: S0 rank is enough for most players. A fully built S0-rank team is better than SSS-rank DPS without proper supports.</div>
+        <div class="rankupcontainer">
+            <div class="ertext"><b>NOTABLE RANK UP</b></div>
+            <div class="rankuppart partcyan">
+                <div class="rankuptitle titlecyan">
+                    DPS Upgrade
+                </div>
+                <div>S1: Increase Resonance DMG</div>
+                <div>S2: Weapon skill trigger time fracture</div>
+                <div>SS2: Elemental Breach +4.5 > 6%</div>
+                <div>All ranks have DPS upgrades.</div>
+            </div>
+
+
+            <div class="rankuppart partyellow">
+                <div class="rankuptitle">
+                    Support Upgrade
+                </div>
+                <div>S2: Part 1 Team</div>
+                <li>Total DMG +34% > 40%</li>
+                <li>Elemental Breach +14% > 17%</li>
+            </div>
+
+        </div>
+
+        <div class="breaklinecontainer">
+            <div class="breakline2"></div>
+        </div>
+        <div class="ertext"><b>FULL RANK-UP LIST</b></div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-toggle">S1</button>
+                <div class="accordion-content">
+                    <p>When SIMP is the leader, Homu consumes teammate's resonance mark to trigger resonance 3 times, each deal 108%  > 120% ATK of Lightning DMG. If the max number of times resonance mark can be triggered is over 7 times, then each mark deal 620%  > 650%  ATK of Lightning DMG.</p>
+                    <p><strong>Good For:</strong> DPS</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-toggle">S2</button>
+                <div class="accordion-content">
+                    <p>
+                    <li>1. When AR World Star is active: During Stellar Outburst, Substitute Mark will launch an additional pinball.</li>
+                    <li>2. When AR is not activated: After casting Ult finisher, teammate gain Total DMG +34% > 40% . If the teammate is a Theresa character, the effect is changed to Elemental Breach state, EleBreach +14% > 17% for 18s.</li>
+                    <li>3. In [Let Me Leave Work!] state, casting weapon skill triggers evasion skill.</li>
+                    </p>
+                    <p><strong>Good For:</strong> DPS, P1 Support, Unlocks time fracture on demand. <b>Recommended!</b></p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-toggle">S3</button>
+                <div class="accordion-content">
+                    <p><li>Leader: Team Elemental DMG +17.2%  > 21.1% </li>
+                        <li>SIMP's resonance atk gain Lightning DMG +21% > 25.5% </li>
+                        <li>Enemies take 17.5% > 21.25%  more Lightning DMG from SIMP's resonance skill (independent multiplier)</li>
+                    </p>
+                    <p><strong>Good For:</strong> DPS</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">SS</button>
+                <div class="accordion-content">
+                    <p>  <li>When Substitute Mark exists, self Total DMG +15.8% > 20% </li>
+                        <li>UNLOCK: In [Let Me Leave Work!] state, Basic ATK seq 2 hits gain Lightning DMG +32%, increase by 8% more when you have Quantum Mech energy</li>
+                    </p>
+                    <p><strong>Good For:</strong> DPS</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">SS1</button>
+                <div class="accordion-content">
+                    <p> Ult Lightning DMG +38% > 42% </p>
+                    <p><strong>Good For:</strong> DPS</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">SS2</button>
+                <div class="accordion-content">
+                    <p> When SIMP is the leader, self Elemental Breach +4.5% > 6%</p>
+                    <p><strong>Good For:</strong> DPS</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">SS3</button>
+                <div class="accordion-content">
+                    <p> <li>Leader: Team Elemental DMG +21.1% > 25% </li>
+                        <li>SIMP's resonance atk gain Lightning DMG +25.5% > 30% </li>
+                        <li>Enemies take 21.25%> 25% more Lightning DMG from SIMP's resonance skill (independent multiplier)</li>
+                    </p>
+                    <p><strong>Good For:</strong> DPS</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">SSS</button>
+                <div class="accordion-content">
+                    <p>In [I Wanna Leave Work!] state, in time fracture, Basic ATK seq 2 hits gain Lightning DMG +32% (SS) > 40% (SSS), increase by 8% (SS) > 10% (SSS) more when you have Quantum Mech energy.
+                        Ult Lightning DMG +42% > 50%
+                    </p>
+                    <p><strong>Good For:</strong> DPS</p>
+                </div>
+            </div>
+
+
+        </div>
+          
+    </div>
+
+    <script src="script.js"></script>
 
     <div class="valkinfo">
-        <h4>Overview Card</h4>
+        <div class="blue-bar">
+            <span class="blue-bar-text">OVERVIEW CARD</span>
+        </div>
+
         <img src="assets/TERI  copy.png"  alt="">
         
         </div>
@@ -884,7 +1648,51 @@
         <source src="assets/bg.mp4" type="video/mp4">
       </video>
 
-      
+      <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <img src="assets/senapoint.png">
+            </div>
+
+
+          <div class="footer-right">
+            <h2>SUPPORT ME</h2>
+
+            <div class="social-icons">
+              <a href="https://www.youtube.com/marisahonkai/join" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://ko-fi.com/marisahonkai" target="_blank"><i class="fas fa-mug-hot ko-fi"></i></a>
+              <a href="https://paypal.me/marisahonkai" target="_blank"><i class="fab fa-paypal"></i></a>
+
+
+            </div>
+            <P>Join Youtube membership, or donate</P>
+          </div>
+
+
+          <div class="footer-right">
+            <h2>SOCIAL</h2>
+            <div class="social-icons">
+              <a href="https://youtube.com/marisahonkai" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.hoyolab.com/accountCenter/postList?id=1021101" target="_blank">
+                <img src="assets/image2vector.svg" alt="Hoyolab Icon" class="hoyolab-icon">
+              </a>
+              <a href="https://discord.gg/marisahonkai" target="_blank"><i class="fab fa-discord"></i></a>
+              <a href="https://twitter.com/marisahonkai" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/morisohonkai/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <P>For the latest HI3 news, guides and memes</P>
+
+          </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                This website is not associated with miHoYo/Hoyoverse. Honkai Impact 3rd
+                game content and materials are trademarks and copyrights of miHoYo/Hoyoverse.
+              </p>
+        </div>
+      </footer>
+
     
 </body>
 
