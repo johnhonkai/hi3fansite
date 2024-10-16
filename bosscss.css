@@ -208,6 +208,7 @@ input[type="radio"]:checked + label {
     text-align: center;
     justify-content: center;
     align-items: center;
+
 }
 
 .bossgriddescription {
@@ -302,6 +303,24 @@ input[type="radio"]:checked + label {
 
     .boss-image-container{
         margin-right:0px;
+    }
+
+    .bossgridlabel, .bossgriddescription {
+        font-size: 0.8em;
+    }
+
+    #boss-name{
+        font-size: 1.1em;
+    }
+
+    #boss-icon{
+        width: 23px;
+        height: 23px;
+    }
+
+    #boss-image{
+        height: 4em;
+        width: auto;
     }
 }
 
