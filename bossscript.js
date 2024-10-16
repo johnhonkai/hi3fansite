@@ -119,7 +119,7 @@ const bossesData = {
       name: 'Flying Fish: Patrol Force', 
       mechanics: 'Upon being stunned or having its special attack blocked, the boss will drop a Luminous Pupil. When it detonates, the boss takes more dmg, max 4 stacks.', 
       weakness: 'None', icon: "assets/type/IconPSI.png", 
-      image: "assets/Bosses/Flying Fish Patrol Force.webp", 
+      image: "assets/Bosses/ff_fish.webp", 
       weather: "Unbalanced: Enemies take 40% more DMG when stunned and within 4s after the stun ends.", 
       videos: [
 
@@ -472,7 +472,7 @@ const teamData = {
           type: 'lineup',
           lineup: ["valkportrait/Theresa Lunar Vow.png", "valkportrait/simpdps.png", "valkportrait/Eden Golden Diva.png", "valkportrait/elf_kiana.png"],
           rank: '99%',
-          note: 'This is SIMP Part 1 DPS, not Lunar Vow dps. SIMP uses Zeno TM Signature B (Top score), Zhenyi TM Signature B or Signature TMB',
+          note: 'This is SIMP x Luna Double DPS. SIMP uses Zeno TM Signature B (Top score), Zhenyi TM Signature B or Signature TMB',
         },
         {
           type: 'lineup',
