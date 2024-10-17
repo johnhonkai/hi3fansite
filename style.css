@@ -1,6 +1,7 @@
 *{
   scrollbar-width: thin;
     scrollbar-color: var(--sk-scrollbar) transparent;
+    
 }
 
 
@@ -1862,6 +1863,12 @@ abbr[title] {
 
   .helia {
     content: url('valkportrait/Helia\ Valkyrie\ Boltstorm.png'); /* Replace with your mobile image */
+    width: 120px;  /* Set smaller width */
+    height: 120px; /* Set smaller height */
+  }
+
+  .sparkle {
+    content: url('valkportrait/sparkle.png'); /* Replace with your mobile image */
     width: 120px;  /* Set smaller width */
     height: 120px; /* Set smaller height */
   }
