@@ -24,6 +24,7 @@ const versionTabs = {
     ],
 
     '7.9': [
+        { name: "Patch Note", url: 'https://rentry.co/79log' },
         { name: "Sparkle", url: 'https://rentry.co/asdadadas' },
         { name: "Sparkle Gears", url: 'https://rentry.co/asdadadas' },
 
