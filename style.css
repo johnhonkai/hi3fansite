@@ -778,7 +778,7 @@ select {
   color: white;
   font-family: sfprodisplaylight;
   line-height: 1.5;
-  margin-top: 30px;
+  margin-top: 0.6em;
   margin-bottom: 30px;
   padding: 20px; /* Adjust padding as needed */
   font-size: 1em;
@@ -801,7 +801,8 @@ select {
   color: white;
   font-family: sfprodisplaylight;
   line-height: 1.5;
-  margin-top: 40px;
+  margin-top: 0.6em;
+  margin-bottom: 30px;
   padding: 20px; /* Adjust padding as needed */
   font-size: 1em;
   border-radius: 5px;
@@ -818,7 +819,8 @@ select {
   color: white;
   font-family: sfprodisplaylight;
   line-height: 1.5;
-  margin-top: 40px;
+  margin-top: 0.6em;
+  margin-bottom: 30px;
   padding: 20px; /* Adjust padding as needed */
   font-size: 16px;
   border-radius: 5px;
@@ -855,7 +857,8 @@ select {
   color: white;
   font-family: sfprodisplaylight;
   line-height: 1.5;
-  margin-top: 40px;
+  margin-top: 0.6em;
+  margin-bottom: 30px;
   padding: 20px; /* Adjust padding as needed */
   font-size: 18px;
   text-align: center;
@@ -946,7 +949,7 @@ select {
   color: white;
   font-family: WFRegular; 
   line-height: 1.5;
-  margin-top: 40px;
+  margin-top: 0.6em;
   padding: 10px 20px; /* Adjust padding as needed */
   font-size: 17px;
 }
@@ -2902,4 +2905,88 @@ html {
 
 body{
   background-color: #1f1f1f;
+}
+
+/*top tab container*/
+.toptabs-container {
+  width: 100%;
+  max-width: 800px;
+
+}
+
+.toptabs {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping for the tabs */
+  justify-content: space-around;
+  background-color: #69696975;
+
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  max-width: 940px;
+  margin: auto;
+  margin-top: 10px;
+
+}
+
+.toptab {
+  background: none;
+  border: none;
+  color: #e0e6f8; /* Light text color to contrast with dark blue */
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-bottom: 2px solid transparent;
+  flex-basis: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.toptab:hover {
+  background-color: #126586; /* Darker blue on hover */
+}
+
+.toptab.active {
+  border-bottom: 2px solid #8a9eff; /* Soft blue/purple color for active tab */
+  
+}
+
+.toptab-content {
+  border-radius: 8px;
+  margin-top: 2em;
+  color: #e0e6f8; /* Light text color for content */
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+  .toptabs {
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .toptab {
+    flex-basis: 33%;
+    font-size: 14px;
+    padding: 10px;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  .toptab {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+
 }

@@ -65,7 +65,14 @@ const bossesData = {
 
   typecounter: [
     { id:'typekasumi', name: 'Kasumi', mechanics: 'Can choose fire or ice vulnerable shield.', weakness: 'None', icon: "assets/type/IconMECH.png", image: "assets/Bosses/Yae Kasumi.webp", weather: "Counter: Type counter effect is 20% stronger."},
-    { id:'typeandrius', name: 'Dominator of Wolves', mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.', weakness: 'Immune to Ice DMG.', icon: "assets/type/IconBIO.png", image: "assets/Bosses/Dominator of Wolves.webp", weather: "Counter: Type counter effect is 20% stronger."}
+    
+    { id:'typeandrius',
+       name: 'Dominator of Wolves',
+       mechanics: 'Transition phase requires a valk with melee atk to parry the attack three times.\nPhase 2 has a shield.',
+       weakness: 'Immune to Ice DMG.',
+       icon: "assets/type/IconBIO.png",
+       image: "assets/Bosses/Dominator of Wolves.webp",
+       weather: "Counter: Type counter effect is 20% stronger."}
 
   
   ],
@@ -97,7 +104,7 @@ const bossesData = {
 
   img: [
     { id: 'imgflower',
-      name: 'Husk: Existentialism', mechanics: 'None', weakness: 'None', icon: "assets/type/IconIMG.png", image: "assets/Bosses/Husk - Existentialism.webp", weather: "IMG: IMG valk DMG +20%", 
+      name: 'Husk: Existentialism', mechanics: 'Transition phase requires melee atk to parry balls. Parrying the final massive rock will make the boss take more dmg.', weakness: 'None', icon: "assets/type/IconIMG.png", image: "assets/Bosses/Husk - Existentialism.webp", weather: "IMG: IMG valk DMG +20%", 
       videos: [
     ]  }
   ],
@@ -170,6 +177,28 @@ const bossesData = {
       videos: [
 
     ]  },
+    { id: 'starlessandrius',
+      name: 'Dominator of Wolves', 
+      mechanics: 'Summons BIO mobs periodically. Transition phase requires a valk with melee atk to parry the attack three times. Phase 2 has a shield.',
+      weakness: 'Immune to Ice DMG.',
+      icon: "assets/type/IconBIO.png",
+      image: "assets/Bosses/Dominator of Wolves.webp",
+      weather: "Starless: Gain Total DMG +15%, effect is disabled during Stellar Outburst. When Astral Ring is not activated, Total DMG +30%.", 
+      videos: [
+
+    ]  },
+  ],
+
+  bleed: [
+    { id: 'bleedhos',
+      name: 'Herrscher of Sentience', 
+      mechanics: 'Transition has high hitcount hp', 
+      weakness: 'None', icon: "assets/type/IconBIO.png", 
+      image: "assets/Bosses/Herrscher\ of\ Sentience.webp", 
+      weather: "Bleed: Bleeding enemies take 40% more DMG, and Bleed DMG +45%", 
+      videos: [
+
+    ]  },
   ],
 
   ice: [
@@ -219,12 +248,35 @@ const teamData = {
 
 
       typeandrius: {
-        teamInfoText: "Incomplete data",
+        teamInfoText: "Data is from v7.8 SEA Server Top 100 Myriad 530D.",
         entries: [
           {
             type: 'lineup',
             lineup: ["valkportrait/Vita Lone Planetfarer.png", "valkportrait/Kiana Herrscher of Finality.png", "valkportrait/Coralie Valkyrie Blastmetal.png", "valkportrait/asop_songque.png"],
-            rank: '-'
+            rank: '96%'
+          },
+          {
+            type: 'lineup',
+            lineup: ["valkportrait/Vita Lone Planetfarer.png", "valkportrait/Kiana Herrscher of Finality.png", "valkportrait/Coralie Valkyrie Blastmetal.png", "valkportrait/elf_kiana.png"],
+            rank: '4%',
+          },
+          { 
+            type: 'top', 
+            top: 'Highest score for each rank' 
+          },
+          { 
+            type: 'extraTeamRow', 
+            extraTeamRow: [
+              { img: 'valkportrait/vitass.png', text: 'SSS 847 Akayuki' },
+              { img: 'valkportrait/vitass.png', text: 'SS1 829 Beemaster' },
+              { img: 'valkportrait/vitass.png', text: 'SS 828 Freesia' },
+              { img: 'valkportrait/vitas2.png', text: 'S2 815 Griseos Brush' },
+              { img: 'valkportrait/vitas0.png', text: 'S0 790 Yuka' }
+            ] 
+          },
+          { 
+            type: 'top', 
+            top: 'Note: This round uses a HoFi fast weapon switch out cancel tech' 
           },
         ]
       },
@@ -470,7 +522,7 @@ const teamData = {
       entries: [
         {
           type: 'lineup',
-          lineup: ["valkportrait/Theresa Lunar Vow.png", "valkportrait/simpdps.png", "valkportrait/Eden Golden Diva.png", "valkportrait/elf_kiana.png"],
+          lineup: ["valkportrait/lvdps.png", "valkportrait/simpdps.png", "valkportrait/Eden Golden Diva.png", "valkportrait/elf_kiana.png"],
           rank: '99%',
           note: 'This is SIMP x Luna Double DPS. SIMP uses Zeno TM Signature B (Top score), Zhenyi TM Signature B or Signature TMB',
         },
@@ -484,9 +536,49 @@ const teamData = {
     },
 
     starlessrimestar: {
-      teamInfoText: "n/a",
+      teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad ??? D.",
       entries: [
+        {
+          type: 'lineup',
+          lineup: ["valkportrait/Fu Hua Fenghuang of Vicissitude.png", "valkportrait/Bronya Herrscher of Truth.png", "valkportrait/Chrono Navi.png", "valkportrait/elf_kiana.png"],
+          rank: '100%',
+        }
+      ]
+    },
 
+    starlessandrius: {
+      teamInfoText: "Data is from v7.8 CN Server (PC) Top 100 Myriad 534 D.",
+      entries: [
+        {
+          type: 'lineup',
+          lineup: ["valkportrait/Mobius Infinite Ouroboros.png", "valkportrait/Theresa Lunar Vow.png", "valkportrait/Theresa Schicksal's Imperative.png", "valkportrait/elf_kiana.png"],
+          rank: '66%',
+          note: 'SIMP gear uses signature set / TeslaBand M / Paganini M\nHighest Score: SSS 868, SS 853, S3 818, S2 813',
+        },
+        {
+          type: 'lineup',
+          lineup: ["valkportrait/Mobius Infinite Ouroboros.png", "valkportrait/Bronya Herrscher of Truth.png", "valkportrait/Theresa Schicksal's Imperative.png", "valkportrait/elf_kiana.png"],
+          rank: 'Top 23\n29%',
+          note: 'Highest Score: 7S 841, SS 832, S3 818',
+        },
+        {
+          type: 'lineup',
+          lineup: ["valkportrait/Mobius Infinite Ouroboros.png", "valkportrait/Bronya Herrscher of Truth.png", "valkportrait/Theresa Lunar Vow.png", "valkportrait/elf_kiana.png"],
+          rank: '3%',
+          note: 'Highest score: 803',
+        },
+        {
+          type: 'lineup',
+          lineup: ["valkportrait/Mei Herrscher of Origin.png", "valkportrait/Kiana Herrscher of Finality.png", "valkportrait/Bronya Herrscher of Truth.png", "valkportrait/elf_kiana.png"],
+          rank: '1%',
+          note: 'Highest score: 7S 802',
+        },
+        {
+          type: 'lineup',
+          lineup: ["valkportrait/Vita Lone Planetfarer.png", "valkportrait/Kiana Herrscher of Finality.png", "valkportrait/Coralie Valkyrie Blastmetal.png", "valkportrait/asop_songque.png"],
+          rank: '1%',
+          note: 'Highest score: 8S 801',
+        }
       ]
     },
     
