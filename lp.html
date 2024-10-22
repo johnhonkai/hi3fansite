@@ -45,18 +45,7 @@
             </a>
         </div>
     </div>
-    <div class="second-navbar-container">
-         
-        <div class="second-navbar">
-            <a href="#overview">Overview</a>
-            <a href="#lineup">Lineup</a>
-            <a href="#equipment">Equipment</a>
-            <a href="#support">Support Buffs</a>
-            <a href="#er">Elysian Realm</a>
-            <a href="#rank-up">Rank Up</a>
-        </div>
-        
-    </div>
+
     
     <a href="#" class="back-to-top" id="backToTop">↑</a>
     <script>
@@ -80,8 +69,6 @@
     });
     </script>
     
-
-
     <div class="topvalkinfo">
         <img src="valkfull/vita.png" alt="Vita Avatar" class="topvalkavatar vita">
       
@@ -110,9 +97,21 @@
           </div>      
         </div>
       </div>
-      
-      <a class="anchor" id="overview"></a>
 
+    <div class="toptabs">
+        <button class="toptab active" data-tab="taboverview">Overview</button>
+        <button class="toptab" data-tab="lineup">Lineup</button>
+        <button class="toptab" data-tab="equipment">Equipment</button>
+        <button class="toptab" data-tab="support-buffs">Support Buffs</button>
+        <button class="toptab" data-tab="elysian-realm">Elysian Realm</button>
+        <button class="toptab" data-tab="rank-up">Rank Up</button>
+        <button class="toptab" data-tab="ovcard">Overview Card</button>
+      </div>
+  
+      <script src="toptabscript.js"></script>
+
+
+    <div class="toptab-content" id="taboverview">
     <div class="valkinfo">
         <div class="blue-bar">
             <span class="blue-bar-text">OVERVIEW</span>
@@ -167,8 +166,10 @@
         </div>
         
     </div>
+</div>
 
-    <a class="anchor" id="lineup"></a>
+<div class="toptab-content hidden" id="lineup">
+
     <div class="valkinfolineup">
 
         <div class="blue-bar">
@@ -788,8 +789,9 @@
     </div>
 
     </div>
+</div>
 
-    <a class="anchor" id="equipment"></a>  
+    <div class="toptab-content hidden" id="equipment">
     <div class="valkinfo">
         <div class="blue-bar">
             <span class="blue-bar-text">EQUIPMENT</span>
@@ -842,8 +844,9 @@
         </div>
 
     </div>
+</div>
 
-    <a class="anchor" id="support"></a>  
+<div class="toptab-content hidden" id="support-buffs">
     <div class="valkinfolineup" >
         <div class="blue-bar">
             <span class="blue-bar-text">SUPPORT BUFF</span>
@@ -855,9 +858,10 @@
 
         
         </div>
+</div>
 
+<div class="toptab-content hidden" id="elysian-realm">
 
-    <a class="anchor" id="er"></a>  
     <div class="valkinfoer" >
         
         <div class="blue-bar"  >
@@ -907,14 +911,17 @@
                     </div>
 
                     <div class="flexvertical">
-                        <img src="/assets/signets/Signets of Discipline (Aponia).png" height="70px" alt="">
+                        <img src="/assets/signets/Signets of Vicissitude (Hua).png" height="70px" alt="">
+                        <div class="starttext">START 7.8</div>
                         <a>2</a>
                     </div>   
 
                     <div class="flexvertical">
-                        <img src="/assets/signets/Signets of Vicissitude (Hua).png" height="70px" alt="">
+                        <img src="/assets/signets/Signets of Discipline (Aponia).png" height="70px" alt="">
                         <a>2</a>
                     </div>   
+
+
                     
                     <div class="flexvertical">
                         <img src="/assets/signets/Signets of Decimation (Kalpas).png" height="70px" alt="">
@@ -933,7 +940,10 @@
                     
 
                 </div>
-                <div>Discipline 2: Take the Elemental Breach enhancement</div>
+                <div>
+                    <li>Start with Vicissitude: 7.8 Phase 1 has Vic +2, getting Vic 2 early on gives more dmg than Gold 1.</li>
+                    <li>Discipline 2: Take the Elemental Breach enhancement</li>
+                </div>
 
 
                     
@@ -997,6 +1007,15 @@
                             </div>
                             
                             <a>START (ER Lite)</a>
+                        </div> 
+
+                        <div class="flexvertical sigil">
+                            <div class="flexhorizontal4">
+                                <img src="assets/sigils/Memory.webp" height="70px" alt="">
+                                <img src="assets/sigils/Because_of_You.webp" height="70px" alt="">
+                            </div>
+                            
+                            <a>VIC START</a>
                         </div> 
     
                         
@@ -1217,12 +1236,12 @@
                   
                 
         </div>
-          
+</div>
           
           
 
 
-    <a class="anchor" id="rank-up"></a>  
+<div class="toptab-content hidden" id="rank-up">
     <div class="valkinfotable desktop" >
         <div class="blue-bar">
             <span class="blue-bar-text">RANK UP</span>
@@ -1490,9 +1509,11 @@
         </div>
           
     </div>
-
+</div>
     <script src="script.js"></script>
 
+   
+    <div class="toptab-content hidden" id="ovcard">
     <div class="valkinfo">
         <div class="blue-bar">
             <span class="blue-bar-text">OVERVIEW CARD</span>
@@ -1501,6 +1522,7 @@
         <img src=""  alt="">
         
         </div>
+    </div>
 
     <video autoplay muted loop playsinline id="myVideo">
         <source src="assets/bg.mp4" type="video/mp4">
@@ -1551,30 +1573,7 @@
         </div>
       </footer>
 
-      <script>
-        window.onload = function() {
-            // Get the elements
-            const navbar = document.querySelector('.second-navbar');
-            const leftBtn = document.querySelector('.left-btn');
-            const rightBtn = document.querySelector('.right-btn');
-    
-            // Scroll left
-            leftBtn.addEventListener('click', () => {
-                navbar.scrollBy({
-                    left: -200, // Adjust the scroll distance
-                    behavior: 'smooth'
-                });
-            });
-    
-            // Scroll right
-            rightBtn.addEventListener('click', () => {
-                navbar.scrollBy({
-                    left: 200, // Adjust the scroll distance
-                    behavior: 'smooth'
-                });
-            });
-        };
-    </script>
+
     
 </body>
 
