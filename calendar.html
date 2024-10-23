@@ -19,7 +19,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="calendarstyle.css">
+    <link rel="stylesheet" href="calendarstyle.css?v=1.0.1">
     <script language="javascript" type="text/javascript" src="calendarjava.js"></script>
     <script type = "text/javascript" src="java.js"></script>
 
@@ -52,10 +52,7 @@
     
 
     <div class="topnote">
-
         This page is best viewed in desktop. A reminder that this supply calendar is based on CN server. Schedule might be different for SEA / KR / GLB servers.
-
-
     </div>
 
     <div class="calendartopcontainer">
@@ -83,7 +80,7 @@
     </script>
 
 
-
+<div class="scroll-container">
     <div class="schedule-container containergreen">
         <!-- Header Grid -->
         <div class="header">
@@ -151,8 +148,9 @@
 
         </div>
     </div>
+</div>
 
-    
+<div class="scroll-container">
     <div class="events-container plsgreen2">
         <!-- Events Header -->
         <div class="eventheader">
@@ -212,13 +210,18 @@
             <div id="event-details"></div> 
         </div>
     </div>
-    
+</div>
+
+
+
+
     <div class="calendartopcontainer">
     <div class="versionnum" id="boss">
         <h2>Boss Schedule</h2>
     </div>
     </div>
 
+    <div class="scroll-container">
     <div class="bosscontainer">
         <div class="bosstable-header">
             <div class="bossheader-item">v7.8 WEEK</div>
@@ -426,7 +429,11 @@
             </div>
         </div>
     </div>
+    </div>
 
+    <div class="bottomnote">
+        For Abyss bosses, you can click on the image to open up the boss page.
+    </div>
 
 
     <script src="calendarstyle.js"></script>
