@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HI3 Calendar and Boss Schedule</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://i.imgur.com/5i3biYu.png" />
+
+    <meta property="og:title" content="HI3 Calendar and Boss Schedule" />
+    <meta property="og:description" content="Version 7.9" />
+    <meta property="og:url" content="https://marisaimpact.com/calendar" />
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="calendarstyle.css?v=1.0.1">
+    <script language="javascript" type="text/javascript" src="calendarjava.js"></script>
+    <script type = "text/javascript" src="java.js"></script>
+
+
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+
+    
+
+</head>
+<body>
+
+
+    <div class="topnav-container">
+        <div class="topnav">
+            <li><a class="active" href="index.html"><img src="assets/logo.png"></a></li>
+            <div class="nav-links" id="navLinks">
+                <a href="charselect.html">Valkyrie</a>
+                <a href="charer.html">Elysian Realm</a>
+                <a href="calendar79.html">Timeline</a>
+                <a href="boss.html">Abyss</a>
+                <a href="betanews.html">Beta Updates</a>
+            </div>
+            <a href="javascript:void(0);" class="navicon" onclick="toggleNav()">
+                &#9776;
+            </a>
+        </div>
+    </div>
+
+    
+
+    <div class="topnote">
+        This page is best viewed in desktop. A reminder that this supply calendar is based on CN server. Schedule might be different for SEA / KR / GLB servers.
+    </div>
+
+    <div class="calendartopcontainer">
+        <div class="versionnum">
+            <h2>Version 7.9</h2>
+        </div>
+
+        <div class="topsection">
+            <label for="version-select">Select Version:</label>
+            <select id="version-select" name="version">
+                <option value="" disabled>Version:</option>
+                <option value="calendar79.html">7.9</option>
+                <option value="calendar78.html">7.8</option>
+                <option value="calendar77.html">7.7</option>
+            </select>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('version-select').addEventListener('change', function() {
+            var selectedValue = this.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        });
+    </script>
+
+
+<div class="scroll-container">
+    <div class="schedule-container containerred">
+        <!-- Header Grid -->
+        <div class="header">
+            <div class="title">Estimated date for SEA / KR / GLB</div>
+            <div class="week">WEEK 1<br>NOV 28-DEC 6</div>
+            <div class="week">WEEK 2<br>DEC 6 - 13</div>
+            <div class="week">WEEK 3<br>DEC 13 - 20</div>
+            <div class="week">WEEK 4<br>DEC 20 - 27</div>
+            <div class="week">WEEK 5<br>DEC 27-JAN 3</div>
+            <div class="week">WEEK 6<br>JAN 3 - 9</div>
+        </div>
+
+        <!-- Labels Grid -->
+        <div class="labelsred">
+            <div class="label labelred">BATTLESUIT SUPPLY A</div>
+            <div class="label labelred">EQUIPMENT SUPPLY A</div>
+            <div class="label labelred">ASTRALOP SUPPLY</div>
+            <div class="label labelred">BATTLESUIT SUPPLY B</div>
+            <div class="label labelred">FOCUSED SUPPLY</div>
+            <div class="label labelred">OUTFIT</div>
+            <div class="label labelred">RETURNEE SUPPLY</div>
+
+        </div>
+
+        <!-- Events Grid -->
+        <div class="schedule-content">
+            <div class="event eventred span-4" data-detail="Sparkle <li>First ten pulls are 50% off.</li><br/><li>A-rank: Valkyrie Boltstorm (UP), Ritual Imayoh, Gyakushin Miko, Kriegsmesser</li>" data-image="https://i.imgur.com/RE7gLy8.png">Sparkle</div>
+            <div class="span-2"></div>
+
+
+            <div class="event eventred span-4 " data-detail="Sparkle Weapon and Stigma<li>Duration: 4 weeks</li><li>Equipment: Sparkle Drive Core and Stigma</li><li>Every 10 pulls guarantee either weapon or stigma</li><li>Weapon guaranteed in 60 pulls or less.</li>" data-image="https://i.imgur.com/oAcrHzh.png">Sparkle Equipment</div>
+            <div class="span-2"></div>
+
+            
+            <div class="event eventred span-2 " data-detail="Songque AstralOp<li>Duration: 2 weeks</li><li>AstralOp guaranteed within 60 pulls.</li>" data-image="">Songque</div>
+            <div class="span-4"></div>
+
+            <div></div>
+            <div class="event eventred" data-detail="Fenghuang of Vicissitude<li>Duration: 1 week</li><li>A-rank: TBA</li>" data-image="">Fenghuang of Vicissitude</div>
+            <div class="span-4"></div>
+
+            <div></div>
+            <div class="event eventred" data-detail="Focused Supply<li>UP: Torch of Eons, FuHua Ordinary Days<li>Duration: 1 week</li><li>Equipment: TBA</li><li>Stigma:TBA</li>" data-image="">Torch of Eons<br/>Fu Hua OD</div>
+            <div class="span-4"></div>
+
+            <div></div>
+            <div class="event eventred span-2" data-detail="Focused Supply<li>UP: Torch of Eons, FuHua Ordinary Days<li>Duration: 1 week</li><li>Equipment: TBA</li><li>Stigma:TBA</li>" data-image="">Torch of Eons<br/>Fu Hua OD</div>
+            <div class="span-3"></div>
+
+            <div class="event eventred span-6" data-detail="Returnee Supply" data-image="">To Be Announced</div>
+            
+            <div id="schedule-details"></div>       
+
+        </div>
+    </div>
+</div>
+
+<div class="scroll-container">
+    <div class="events-container plsred">
+        <!-- Events Header -->
+        <div class="eventheader">
+            <div class="eventtitle">EVENTS</div>
+        </div>
+    
+        <!-- Labels Grid -->
+        <div class="labels79">
+            <div class="label labelred">EVENT 1</div>
+            <div class="label labelred">EVENT 2</div>
+            <div class="label labelred">EVENT 3</div>
+            <div class="label labelred">EVENT 4</div>
+ 
+
+
+        </div>
+    
+        <!-- Events Grid -->
+        <div class="events-content">
+            <div class="event eventfullpic eventconred span-6" data-detail="HI3 x HSR Event<li>Rewards Sparkle outfit, 1000 crystal and more</li>" data-image="https://i.imgur.com/wS8N6EW.png">HI3 x HSR Collab</div>
+
+            <div class="event eventlongerpic eventconred  span-6" data-detail="Complete 4 out of 5 event missions in 7.9 to get free Herrscher of Human: Ego<br/><li>Login</li><li>Clear phase 3 HI3xHSR Collab</li><li>Clear Chapter 6</li><li>Clear the main stages of Ai-chan Cafe event</li><li>Clear 9 stages of Dual Core event</li>" data-image="https://i.imgur.com/fA9hM0s.png">Free Herrscher of Human: Ego</div>
+            <div class="event eventlongerpic eventconred span-6" data-detail="5 Battlesuit Cards, 5 Equipment Cards + Sparkle Fumo
+            Sparkle Stigma Box, Crystal, Asterite, AE Imaginon" data-image="https://i.imgur.com/ZBK25D3.png">Log-in Freebies: 5 Battlesuit Cards, 5 Equipment Cards + Sparkle Fumo,  Sparkle Stigma Box, Crystal, Asterite, AE Imaginon</div>
+            <div class="event eventlongerpic eventconred span-6" data-detail="Topup Event: Topup ~100 usd to get up to 3 Dreamweaver stamps / 3 HoFi stamps / 240 AL + other mats" data-image="https://i.imgur.com/KRCeBEK.png">Topup Event: Topup ~100 usd to get up to 3 Dreamweaver stamps / 3 HoFi stamps / 240 AL + other mats</div>
+
+
+            
+
+            <div id="event-details"></div> 
+        </div>
+    </div>
+</div>
+
+
+
+
+    <div class="calendartopcontainer">
+    <div class="versionnum" id="boss">
+        <h2>Boss Schedule</h2>
+    </div>
+    </div>
+
+    <div class="bottomnote">
+        For Abyss bosses, you can click on the image to open up the boss page.
+    </div>
+
+
+    <script src="calendarstyle.js"></script>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-left">
+                <img src="assets/senapoint.png">
+            </div>
+
+
+          <div class="footer-right">
+            <h2>SUPPORT ME</h2>
+
+            <div class="social-icons">
+              <a href="https://www.youtube.com/marisahonkai/join" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://ko-fi.com/marisahonkai" target="_blank"><i class="fas fa-mug-hot ko-fi"></i></a>
+              <a href="https://paypal.me/marisahonkai" target="_blank"><i class="fab fa-paypal"></i></a>
+
+
+            </div>
+            <P>Join Youtube membership, or donate</P>
+          </div>
+
+
+          <div class="footer-right">
+            <h2>SOCIAL</h2>
+            <div class="social-icons">
+              <a href="https://youtube.com/marisahonkai" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.hoyolab.com/accountCenter/postList?id=1021101" target="_blank">
+                <img src="assets/image2vector.svg" alt="Hoyolab Icon" class="hoyolab-icon">
+              </a>
+              <a href="https://discord.gg/marisahonkai" target="_blank"><i class="fab fa-discord"></i></a>
+              <a href="https://twitter.com/marisahonkai" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/morisohonkai/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <P>For the latest HI3 news, guides and memes</P>
+
+          </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                This website is not associated with miHoYo/Hoyoverse. Honkai Impact 3rd
+                game content and materials are trademarks and copyrights of miHoYo/Hoyoverse.
+              </p>
+        </div>
+      </footer>
+
+      <script>
+        window.onload = function() {
+            // Get the elements
+            const navbar = document.querySelector('.second-navbar');
+            const leftBtn = document.querySelector('.left-btn');
+            const rightBtn = document.querySelector('.right-btn');
+    
+            // Scroll left
+            leftBtn.addEventListener('click', () => {
+                navbar.scrollBy({
+                    left: -200, // Adjust the scroll distance
+                    behavior: 'smooth'
+                });
+            });
+    
+            // Scroll right
+            rightBtn.addEventListener('click', () => {
+                navbar.scrollBy({
+                    left: 200, // Adjust the scroll distance
+                    behavior: 'smooth'
+                });
+            });
+        };
+    </script>
+
+<video autoplay muted loop playsinline id="myVideo">
+    <source src="assets/bg.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>

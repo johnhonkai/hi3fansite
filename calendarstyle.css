@@ -25,6 +25,11 @@ body {
     background-image: linear-gradient(#0eb4b9, #bfe1e2);
 }
 
+.containerred{
+  background-image: linear-gradient(#df4163, #e2bfc8);
+}
+
+
 /* Header section styles */
 .header {
     grid-column: 1 / span 2; /* Header spans both columns */
@@ -92,7 +97,10 @@ body {
     background-color: #ffffff;
 }
 
-
+.labelsred {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr); /* Ensure labels are evenly spaced */
+  background-color: #ffffff;}
 
 .label {
     font-weight: bold;
@@ -151,6 +159,10 @@ body {
 
 .eventgreen{
     box-shadow: inset 0px 0px 0px 2px rgb(1, 54, 43);
+}
+
+.eventred{
+  box-shadow: inset 0px 0px 0px 2px rgb(95, 3, 26);
 }
 
 .event::after {
@@ -262,7 +274,9 @@ body {
 .plsgreen2{
     background-image: linear-gradient(#0eb4b9, #bfe1e2);   
 }
-
+.plsred{
+  background-image: linear-gradient(#df4163, #e2bfc8);
+}
 /* Header section styles for events */
 .events-container .header {
     grid-column: 1 / span 2; /* Header spans both columns */
@@ -288,6 +302,11 @@ body {
     background-color: #ffffff;
 }
 
+.events-container .labels79 {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr); /* Adjust for 8 events */
+  background-color: #ffffff;
+}
 
 .label.labelpurple:nth-child(even){
     color: #7516c4;
@@ -295,6 +314,10 @@ body {
 
 .label.labelazure:nth-child(even){
     color: #077e64;
+}
+
+.label.labelred:nth-child(even){
+  color: #d44474;
 }
 
 
@@ -355,6 +378,10 @@ body {
 
 .events-container .eventcongreen{
     box-shadow: inset 0px 0px 0px 2px rgb(1, 54, 43);
+}
+
+.events-container .eventconred{
+  box-shadow: inset 0px 0px 0px 2px rgb(92, 4, 19);
 }
 
 
