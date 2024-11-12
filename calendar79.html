@@ -19,7 +19,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="calendarstyle.css?v=1.0.3">
+    <link rel="stylesheet" href="calendarstyle.css?v=1.0.4">
     <script language="javascript" type="text/javascript" src="calendarjava.js"></script>
     <script type = "text/javascript" src="java.js"></script>
 
@@ -64,7 +64,7 @@
             <label for="version-select">Select Version:</label>
             <select id="version-select" name="version">
                 <option value="" disabled>Version:</option>
-                <option value="calendar79.html">7.9</option>
+                <option value="calendar79.html" selected>7.9</option>
                 <option value="calendar78.html">7.8</option>
                 <option value="calendar77.html">7.7</option>
             </select>
@@ -120,18 +120,18 @@
             <div class="span-4"></div>
 
             <div></div>
-            <div class="event eventred" data-detail="Fenghuang of Vicissitude<li>Duration: 1 week</li><li>A-rank: TBA</li>" data-image="">Fenghuang of Vicissitude</div>
+            <div class="event eventred" data-detail="Fenghuang of Vicissitude<li>Duration: 1 week</li><li>A-rank: Midnight Absinthe (UP), Shadow Dash, Luna Kindred, Valkyrie Accipiter</li>" data-image="">Fenghuang of Vicissitude</div>
             <div class="span-4"></div>
 
             <div></div>
-            <div class="event eventred" data-detail="Focused Supply<li>UP: Torch of Eons, FuHua Ordinary Days<li>Duration: 1 week</li><li>Equipment: TBA</li><li>Stigma:TBA</li>" data-image="">Torch of Eons<br/>Fu Hua OD</div>
+            <div class="event eventred" data-detail="Focused Supply<li>UP: Torch of Eons, FuHua Ordinary Days<li>Duration: 1 week</li><li>Equipment: UP: Torch of Eons, Fu Hua OD</li><li>Weapon: Torch of Eons (UP), Echo of Paradise, KoAscension, Anchor of the Voyage, Pandora 18, Life Harvester, Lost Conviction</li><li>Stigma: Fu Hua OD (UP), Little Joys, Elysia Pristine, Cecilia Youth, Raiden Mei</li>" data-image="">Torch of Eons<br/>Fu Hua OD</div>
             <div class="span-4"></div>
 
             <div></div>
-            <div class="event eventred span-2" data-detail="Max 9600 crystal for outfit + all rewards" data-image="">Crane of Taixuan</div>
+            <div class="event eventred span-2" data-detail="Max 9600 crystal for outfit + all rewards<br/>S-rank selector: Choose HoThunder card / Bright Knight card / Phoenix card / HoThunder stamps x10 / Bright Knight stamps x5 / Phoenix stamps x5" data-image="">Crane of Taixuan</div>
             <div class="span-3"></div>
 
-            <div class="event eventred span-6" data-detail="Returnee Supply" data-image="">To Be Announced</div>
+            <div class="event eventred span-6" data-detail="Returnee Supply" data-image="">Herrscher of Rebirth and her equipment</div>
             
             <div id="schedule-details"></div>       
 
@@ -152,7 +152,8 @@
             <div class="label labelred">EVENT 2</div>
             <div class="label labelred">EVENT 3</div>
             <div class="label labelred">EVENT 4</div>
- 
+            <div class="label labelred">EVENT 5</div>
+
 
 
         </div>
@@ -165,6 +166,10 @@
             <div class="event eventlongerpic eventconred span-6" data-detail="5 Battlesuit Cards, 5 Equipment Cards + Sparkle Fumo, Sparkle Stigma Box, Crystal, Asterite, AE Imaginon" data-image="https://i.imgur.com/ZBK25D3.png">Log-in Freebies: 5 Battlesuit Cards, 5 Equipment Cards + Sparkle Fumo, <br/> Sparkle Stigma Box, Crystal, Asterite, AE Imaginon</div>
             <div class="event eventlongerpic eventconred span-6" data-detail="Topup Event: Topup ~100 usd to get up to 3 Dreamweaver stamps / 3 HoFi stamps / 240 AL + other mats" data-image="https://i.imgur.com/KRCeBEK.png">Topup Event: Topup ~100 usd to get up to 3 Dreamweaver stamps / <br/> 3 HoFi stamps / 240 AL + other mats</div>
 
+            <div></div>
+
+            <div class="event eventlongerpic eventconred span-5" data-detail="P2 Chapter 6 <br/> Starts on Monday at 10 AM" data-image="https://i.imgur.com/GcgAXuP.png">P2 Chapter 6 <br/> Starts on Monday at 10 AM</div>
+
 
             
 
@@ -176,16 +181,204 @@
 
 
 
-    <div class="calendartopcontainer">
+<div class="calendartopcontainer">
     <div class="versionnum" id="boss">
         <h2>Boss Schedule</h2>
     </div>
     </div>
 
-    <div class="bottomnote">
-        For Abyss bosses, you can click on the image to open up the boss page.
-    </div>
+    <div class="scroll-container">
+    <div class="bosscontainer">
+        <div class="bosstable-header">
+            <div class="bossheader-item">v7.9 WEEK</div>
+            <div class="bossheader-item">EX ABYSS</div>
+            <div class="bossheader-item">MEMORIAL ARENA</div>
+        </div>
+    
+        <div class="bosstable-row">
+            <div class="week-number">1</div>
+    
+            <div class="ex-abyss">
+                <div class="boss-box">
+                    <div class="date">Nov 29</div>
+                    <div class="boss-image" style="background-image: url('assets/Bosses/Herrscher\ of\ Sentience.webp');"></div>
+                    <div class="boss-name">Ignite</div>
 
+                </div>
+                <div class="boss-box">
+                    <div class="date">Dec 2</div>
+                    <div class="boss-image" style="background-image: url('assets/Bosses/Alien\ Guard.webp');"></div>
+                    <div class="boss-name">Blood</div>
+                </div>
+            </div>
+    
+            <div class="memorial-arena">
+                <div class="boss-box">
+                    <div class="date">Dec 3</div>
+                    <div class="boss-image" style="background-image: url('assets/Bosses/vita.png');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('assets/Bosses/False\ God\ Otto.webp');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('assets/Bosses/Hellmaru.webp');"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bosstable-row">
+            <div class="week-number">2</div>
+    
+            <div class="ex-abyss">
+                <div class="boss-box">
+                    <div class="date">Dec 6</div>
+                    <div class="boss-image" style="background-image: url('assets/Bosses/vita.png');"></div>
+                    <div class="boss-name">Resonance</div>
+                </div>
+                <div class="boss-box">
+                    <a href="boss.html?weather=typecounter&boss=typekasumi">
+                    <div class="date">Dec 9</div>
+                    <div class="boss-image" style="background-image: url('assets/Bosses/Herrscher\ of\ Corruption.webp');"></div>
+                    <div class="boss-name">Melee</div>
+                </a>
+                </div>
+            </div>
+    
+            <div class="memorial-arena">
+                <div class="boss-box">
+                    <div class="date">Dec 10</div>
+                    <div class="boss-image" style="background-image: url('assets/Bosses/Herrscher\ of\ Rimestar.png');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('assets/Bosses/Varaha.png');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('assets/Bosses/Herrscher\ of\ the\ Void.webp');"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bosstable-row">
+            <div class="week-number">3</div>
+    
+            <div class="ex-abyss">
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('');"></div>
+                    <div class="boss-name">TBA</div>
+                </div>
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('')"></div>
+                    <div class="boss-name">TBA</div>
+                </div>
+            </div>
+    
+            <div class="memorial-arena">
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bosstable-row">
+            <div class="week-number">4</div>
+    
+            <div class="ex-abyss">
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('');"></div>
+                    <div class="boss-name">TBA</div>
+                </div>
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('')"></div>
+                    <div class="boss-name">TBA</div>
+                </div>
+            </div>
+    
+            <div class="memorial-arena">
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bosstable-row">
+            <div class="week-number">5</div>
+    
+            <div class="ex-abyss">
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('');"></div>
+                    <div class="boss-name">TBA</div>
+                </div>
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('')"></div>
+                    <div class="boss-name">TBA</div>
+                </div>
+            </div>
+    
+            <div class="memorial-arena">
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bosstable-row">
+            <div class="week-number">6</div>
+    
+            <div class="ex-abyss">
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('');"></div>
+                    <div class="boss-name">TBA</div>
+                </div>
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('')"></div>
+                    <div class="boss-name">TBA</div>
+                </div>
+            </div>
+    
+            <div class="memorial-arena">
+                <div class="boss-box">
+                    <div class="date">TBA</div>
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+                <div class="boss-box">
+                    <div class="boss-image" style="background-image: url('');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <script src="calendarstyle.js"></script>
 
